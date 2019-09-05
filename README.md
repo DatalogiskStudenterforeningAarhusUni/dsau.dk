@@ -15,3 +15,4 @@ The current build is running on [https://soer7022.github.io/dsau.dk/](https://so
 - [ ] About Page
 - [ ] Members of the board
 - [ ] Contact page
+- [ ] Events page
