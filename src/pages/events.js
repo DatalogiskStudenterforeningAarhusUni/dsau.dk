@@ -1,41 +1,42 @@
 import React from "react";
-import { Calendar, momentLocalizer } from "react-big-calendar";
+import { Calendar, Views, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
 const localizer = momentLocalizer(moment);
 
-const MyCalendar = (
+const listOfEvents = [
+	{
+		title: "Birthday Party 2",
+		allDay: false,
+		start: new Date(2019, 8, 13, 7, 0, 0),
+		end: new Date(2019, 8, 13, 10, 30, 0),
+		desc:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+	}
+];
+
+//TODO factor out custom compoment
+function CustomEvent({ event }) {
+	return (
+		<span onClick={console.log(event.title + ":  pressed")}>
+			<em style={{ color: "magenta" }}>{event.title}</em>
+			<p>{event.desc}</p>
+		</span>
+	);
+}
+
+let Rendering = ({ localizer }) => (
 	<Calendar
-		events={[
-			{
-				title: "My event",
-				allDay: false,
-				start: new Date(2019, 9, 6, 10, 0), // 10.00 AM
-				end: new Date(2019, 9, 6, 14, 0) // 2.00 PM
-			},
-			{
-				title: "My event",
-				allDay: false,
-				start: new Date(2019, 9, 4, 10, 0), // 10.00 AM
-				end: new Date(2019, 9, 4, 14, 0) // 2.00 PM
-			}
-		]}
-		step={60}
-		view="week"
-		views={["week"]}
-		min={new Date(2008, 0, 1, 8, 0)} // 8.00 AM
-		max={new Date(2024, 0, 1, 17, 0)} // Max will be 6.00 PM!
+		events={listOfEvents}
 		localizer={localizer}
+		defaultDate={new Date()}
+		components={{
+			event: CustomEvent
+		}}
 	/>
 );
 
 export default function Events() {
-	return (
-		<div style={{ height: 700 }}>
-			<h2>Events</h2>
-
-			{MyCalendar}
-		</div>
-	);
+	return <div style={{ height: 700 }}>{Rendering({ localizer })}</div>;
 }
