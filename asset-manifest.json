@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/dsau.dk/static/css/main.2cce8147.chunk.css",
-    "main.js": "/dsau.dk/static/js/main.aed2d4c9.chunk.js",
-    "main.js.map": "/dsau.dk/static/js/main.aed2d4c9.chunk.js.map",
+    "main.css": "/dsau.dk/static/css/main.3ddd07c3.chunk.css",
+    "main.js": "/dsau.dk/static/js/main.b87a63af.chunk.js",
+    "main.js.map": "/dsau.dk/static/js/main.b87a63af.chunk.js.map",
     "runtime~main.js": "/dsau.dk/static/js/runtime~main.74967c90.js",
     "runtime~main.js.map": "/dsau.dk/static/js/runtime~main.74967c90.js.map",
-    "static/js/2.8768a673.chunk.js": "/dsau.dk/static/js/2.8768a673.chunk.js",
-    "static/js/2.8768a673.chunk.js.map": "/dsau.dk/static/js/2.8768a673.chunk.js.map",
+    "static/js/2.b95ca47a.chunk.js": "/dsau.dk/static/js/2.b95ca47a.chunk.js",
+    "static/js/2.b95ca47a.chunk.js.map": "/dsau.dk/static/js/2.b95ca47a.chunk.js.map",
     "index.html": "/dsau.dk/index.html",
-    "precache-manifest.9c8ca739f9dcb587ad9404cb09679711.js": "/dsau.dk/precache-manifest.9c8ca739f9dcb587ad9404cb09679711.js",
+    "precache-manifest.f9349b7f9aee21cdc94a23b930771b67.js": "/dsau.dk/precache-manifest.f9349b7f9aee21cdc94a23b930771b67.js",
     "service-worker.js": "/dsau.dk/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/dsau.dk/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/dsau.dk/static/media/logo.5d5d9eef.svg"
+    "static/css/main.3ddd07c3.chunk.css.map": "/dsau.dk/static/css/main.3ddd07c3.chunk.css.map"
   }
 }
