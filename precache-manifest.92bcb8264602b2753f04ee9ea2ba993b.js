@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7921c8bf973dcb18cd246c756f67571",
+    "revision": "7a47512af6aee38417d20f9ae2ca1811",
     "url": "/dsau.dk/index.html"
   },
   {
-    "revision": "ae42a3a58834b82a9310",
+    "revision": "78ec11ddaffb63cabc10",
     "url": "/dsau.dk/static/css/main.3ddd07c3.chunk.css"
   },
   {
-    "revision": "7c082ed65a114ed09d2e",
-    "url": "/dsau.dk/static/js/2.b95ca47a.chunk.js"
+    "revision": "5f63b6404d20d4696a51",
+    "url": "/dsau.dk/static/js/2.c7490a25.chunk.js"
   },
   {
-    "revision": "ae42a3a58834b82a9310",
-    "url": "/dsau.dk/static/js/main.47f4f22f.chunk.js"
+    "revision": "78ec11ddaffb63cabc10",
+    "url": "/dsau.dk/static/js/main.a3afa2e7.chunk.js"
   },
   {
     "revision": "617cf421db0e8bb7c397",
