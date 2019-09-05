@@ -1,7 +1,7 @@
 import React from "react";
 import {HashRouter, Route, Link} from "react-router-dom";
 import "./App.css"
-import {Index, About, Users} from "./pages";
+import {Index, About, Contact, Board} from "./pages";
 
 function AppRouter() {
     return (
@@ -15,21 +15,25 @@ function AppRouter() {
                     </Link>
                     <ul className="navigation__list">
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/">Hjem</Link>
                         </li>
                         <li>
-                            <Link to="/about/">About</Link>
+                            <Link to="/om/">Om</Link>
                         </li>
                         <li>
-                            <Link to="/users/">Users</Link>
+                            <Link to="/kontakt/">Kontakt</Link>
+                        </li>
+                        <li>
+                            <Link to="/bestyrelse/">Bestyrelse</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
             <div className="content">
                 <Route path="/" exact component={Index}/>
-                <Route path="/about/" component={About}/>
-                <Route path="/users/" component={Users}/>
+                <Route path="/om/" component={About}/>
+                <Route path="/kontakt/" component={Contact}/>
+                <Route path="/bestyrelse/" component={Board}/>
             </div>
         </HashRouter>
     );

@@ -5,9 +5,13 @@ export function Index() {
 }
 
 export function About() {
-    return <h2>About</h2>;
+    return <h2>Om</h2>;
 }
 
-export function Users() {
-    return <h2>Users</h2>;
+export function Board() {
+    return <h2>Bestyrelsen</h2>;
+}
+
+export function Contact() {
+    return <h2>Kontakt os</h2>
 }
