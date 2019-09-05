@@ -11,5 +11,7 @@ Use `npm run deploy` to deploy directly to github pages with static hosting.
 The current build is running on [https://soer7022.github.io/dsau.dk/](https://soer7022.github.io/dsau.dk/)
 
 ## Features of the website
-- [ ] test
-- [x] test2
+- [ ] Landing page
+- [ ] About Page
+- [ ] Members of the board
+- [ ] Contact page
