@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import "./App.css"
+import {Index, About, Users} from "./pages";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function AppRouter() {
+    return (
+        <Router>
+            <nav className="navigation">
+                <div className="navigation__content">
+                    <Link to="/">
+                        <img className="navigation__logo"
+                             src={process.env.PUBLIC_URL + '/DSAU_logo.png'} // process.env.PUBLIC_URL links to public folder
+                             alt="DSAU Logo"/>
+                    </Link>
+                    <ul className="navigation__list">
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about/">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/users/">Users</Link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div className="content">
+                <Route path="/" exact component={Index}/>
+                <Route path="/about/" component={About}/>
+                <Route path="/users/" component={Users}/>
+            </div>
+        </Router>
+    );
 }
 
-export default App;
+export default AppRouter;
