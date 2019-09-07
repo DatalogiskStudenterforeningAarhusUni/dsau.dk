@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d33b9f74d74ef7af93f66c2b7d2f899",
+    "revision": "106a47eef907d7be2d8e3c4b6e8e6cb8",
     "url": "/dsau.dk/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dsau.dk/static/css/2.48adc591.chunk.css"
   },
   {
-    "revision": "a138e38bee9b73d61a5b",
+    "revision": "b42a13ab8cab2669684b",
     "url": "/dsau.dk/static/css/main.a723e26a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dsau.dk/static/js/2.fde90de3.chunk.js"
   },
   {
-    "revision": "a138e38bee9b73d61a5b",
-    "url": "/dsau.dk/static/js/main.1ecf18fa.chunk.js"
+    "revision": "b42a13ab8cab2669684b",
+    "url": "/dsau.dk/static/js/main.a7676268.chunk.js"
   },
   {
     "revision": "617cf421db0e8bb7c397",
