@@ -1,42 +1,62 @@
 import React from "react";
-import { Calendar, Views, momentLocalizer } from "react-big-calendar";
-import moment from "moment";
-import "react-big-calendar/lib/css/react-big-calendar.css";
+import {useState} from "react"
+import MyCalendar from "./components/MyCalendar";
 
-const localizer = momentLocalizer(moment);
+export default function Events() {
+	let data = [];
 
-const listOfEvents = [
-	{
-		title: "Birthday Party 2",
-		allDay: false,
-		start: new Date(2019, 8, 13, 7, 0, 0),
-		end: new Date(2019, 8, 13, 10, 30, 0),
-		desc:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-	}
-];
+	const [events, setEvents] = useState(data);
 
-//TODO factor out custom compoment
-function CustomEvent({ event }) {
+	//TODO fetch happens twice on page load
+	const onGetEventsFromFacebook = () => {
+		fetch("https://graph.facebook.com/DSAUdk/events", {
+			method: "get",
+			headers: new Headers({
+				Authorization:
+					"Bearer EAAeEg2Lpd8EBAOhJ3S7INLOsWzyrZAWJjtohIwO71qrOr75TGj00Rf6C7y6TEv7ZCYDg6ADqzOzZALhRtleZBDOAqZAihZAbPqP3M6zm8rQKtQxyztLFcJyHHR7JuQAMKOphwfm5CHAcQahVfhZCLI2ZC4ghG8FZBmZCbl4oEqZADgj8AZDZD"
+			})
+		})
+			.then(responce => responce.json())
+			.then(json => json.data).then(data => calendarFormat(data)).then(data => {
+				if (events.length === data.length) {
+					console.log("no event update")
+				} else {
+					console.log("events updated")
+					setEvents(data)
+				}
+			});
+	};
+
+	onGetEventsFromFacebook();
+	console.log("events function");
+
 	return (
-		<span onClick={console.log(event.title + ":  pressed")}>
-			<em style={{ color: "magenta" }}>{event.title}</em>
-			<p>{event.desc}</p>
-		</span>
+		<div>
+			<h2>Events</h2>
+			<div style={{ height: 700 }}>{MyCalendar(events)}</div>
+			<button onClick={onGetEventsFromFacebook}>get events</button>
+			<button onClick={() => console.log({events})}>print events</button>
+		</div>
 	);
 }
 
-let Rendering = ({ localizer }) => (
-	<Calendar
-		events={listOfEvents}
-		localizer={localizer}
-		defaultDate={new Date()}
-		components={{
-			event: CustomEvent
-		}}
-	/>
-);
+function calendarFormat(data) {
 
-export default function Events() {
-	return <div style={{ height: 700 }}>{Rendering({ localizer })}</div>;
+	console.log(data);
+	data.forEach((item ) => {
+		item.location = item.place.name;
+		delete item["place"];
+		item.start = item.start_time;
+		delete item["start_time"];
+		item.end = item.end_time;
+		delete item["end_time"];
+		item.allday = false;
+		item.start = new Date(item.start)
+		item.end = new Date(item.end)
+	});
+
+	return data;
+	// console.log(data);
 }
+
+
