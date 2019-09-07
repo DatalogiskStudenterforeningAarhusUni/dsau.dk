@@ -37,10 +37,6 @@ export default function Events() {
 		<div>
 			<h2>Events</h2>
 			<div style={{ height: 700 }}>{MyCalendar(events)}</div>
-			<button onClick={onGetEventsFromFacebook}>get events</button>
-			<button onClick={() => console.log({ events })}>
-				print events
-			</button>
 		</div>
 	);
 }

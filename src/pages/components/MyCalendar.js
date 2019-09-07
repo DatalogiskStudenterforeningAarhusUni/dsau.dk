@@ -51,6 +51,7 @@ export default function MyCalendar(eventList) {
 
 	return (
 		<Calendar
+			culture={"en-GB"}
 			events={eventList}
 			localizer={localizer}
 			//defaultDate={new Date()}
