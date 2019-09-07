@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from "react"
+import { useState } from "react";
 import MyCalendar from "./components/MyCalendar";
 
 export default function Events() {
@@ -8,6 +8,7 @@ export default function Events() {
 	const [events, setEvents] = useState(data);
 
 	//TODO fetch happens twice on page load
+	//TODO fix token using graph.facebook api
 	const onGetEventsFromFacebook = () => {
 		fetch("https://graph.facebook.com/DSAUdk/events", {
 			method: "get",
@@ -17,12 +18,14 @@ export default function Events() {
 			})
 		})
 			.then(responce => responce.json())
-			.then(json => json.data).then(data => calendarFormat(data)).then(data => {
+			.then(json => json.data)
+			.then(data => calendarFormat(data))
+			.then(data => {
 				if (events.length === data.length) {
-					console.log("no event update")
+					console.log("no event update");
 				} else {
-					console.log("events updated")
-					setEvents(data)
+					console.log("events updated");
+					setEvents(data);
 				}
 			});
 	};
@@ -35,15 +38,15 @@ export default function Events() {
 			<h2>Events</h2>
 			<div style={{ height: 700 }}>{MyCalendar(events)}</div>
 			<button onClick={onGetEventsFromFacebook}>get events</button>
-			<button onClick={() => console.log({events})}>print events</button>
+			<button onClick={() => console.log({ events })}>
+				print events
+			</button>
 		</div>
 	);
 }
 
 function calendarFormat(data) {
-
-	console.log(data);
-	data.forEach((item ) => {
+	data.forEach(item => {
 		item.location = item.place.name;
 		delete item["place"];
 		item.start = item.start_time;
@@ -51,12 +54,10 @@ function calendarFormat(data) {
 		item.end = item.end_time;
 		delete item["end_time"];
 		item.allday = false;
-		item.start = new Date(item.start)
-		item.end = new Date(item.end)
+		item.start = new Date(item.start);
+		item.end = new Date(item.end);
 	});
 
 	return data;
 	// console.log(data);
 }
-
-
