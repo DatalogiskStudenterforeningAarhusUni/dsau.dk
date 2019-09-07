@@ -3,15 +3,14 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from "moment";
 import CustomEvent from "./CustomEvent";
 import React from "react";
-import {Route} from "react-router-dom";
 
 const localizer = momentLocalizer(moment);
 
 export default function MyCalendar(eventList) {
     const redirectToEvent = (id) => {
-        const url = "facebook.com/" + id;
-        window.open(url, '_blank');
-    }
+        window.open("https://facebook.com/events/" + id, "_blank");
+        // window.location.assign("https://facebook.com/events/" + id)
+    };
 
 	return (
 		<Calendar
