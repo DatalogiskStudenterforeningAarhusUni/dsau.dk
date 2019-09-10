@@ -3,9 +3,7 @@ import { useState } from "react";
 import MyCalendar from "./components/MyCalendar";
 
 export default function Events() {
-	let data = [];
-
-	const [events, setEvents] = useState(data);
+	const [events, setEvents] = useState();
 
 	//TODO fetch happens twice on page load
 	//TODO fix token using graph.facebook api

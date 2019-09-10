@@ -1,47 +1,50 @@
 {
-  "name": "dsau",
-  "version": "0.1.0",
-  "homepage": "http://soer7022.github.io/dsau.dk",
-  "private": true,
-  "dependencies": {
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.9.0",
-    "react-big-calendar": "^0.22.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1"
-  },
-  "scripts": {
-    "start": "node-sass ./src/scss -o ./src && react-scripts start",
-    "build": "node-sass ./src/scss -o ./src && react-scripts build",
-    "scss": "node-sass --watch ./src/scss -o ./src",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "prettier": "1.18.2"
-  },
-  "prettier": {
-    "useTabs": true,
-    "tabWidth": 4
-  }
+	"name": "dsau",
+	"version": "0.1.0",
+	"homepage": "http://soer7022.github.io/dsau.dk",
+	"private": true,
+	"dependencies": {
+		"moment": "^2.24.0",
+		"node-sass": "^4.12.0",
+		"react": "^16.9.0",
+		"react-big-calendar": "^0.22.0",
+		"react-dom": "^16.9.0",
+		"react-router-dom": "^5.0.1",
+		"react-scripts": "3.1.1",
+		"typescript": "^3.6.2"
+	},
+	"scripts": {
+		"start": "node-sass ./src/scss -o ./src && react-scripts start",
+		"build": "node-sass ./src/scss -o ./src && react-scripts build",
+		"scss": "node-sass --watch ./src/scss -o ./src",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/react": "^16.9.2",
+		"@types/react-big-calendar": "^0.22.2",
+		"gh-pages": "^2.1.1",
+		"prettier": "1.18.2"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4
+	}
 }
