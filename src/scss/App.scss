@@ -1,3 +1,5 @@
+@import "member";
+
 .navigation {
   background: rgb(66, 66, 66);
   margin: 0;
@@ -36,6 +38,15 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+.board {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    padding: 0 50px;
   }
 }
 

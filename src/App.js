@@ -1,7 +1,8 @@
 import React from "react";
 import {HashRouter, Route, Link} from "react-router-dom";
 import "./App.css"
-import {Index, About, Contact, Board} from "./pages";
+import {Index, About, Contact} from "./pages";
+import Board from "./pages/board";
 
 function AppRouter() {
     return (
