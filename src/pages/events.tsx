@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { MyCalendar } from "./components/MyCalendar";
 import { MyEvent, FbEvent } from "./components/interfaces";
+import { FrequentEvent } from "./components/FrequentEvent";
+import frequent_events from "../frequent_events.json";
 
 export function Events() {
 	const [events, setEvents] = useState<MyEvent[]>([]);
@@ -30,6 +32,16 @@ export function Events() {
 			<h2>Events</h2>
 			<div style={{ height: 700 }}>
 				<MyCalendar events={events} />
+			</div>
+			<h2>Årlige events</h2>
+			<div className="events__grid">
+				{frequent_events.map(e => (
+					<FrequentEvent
+						name={e.name}
+						description={e.description}
+						quarter={e.quarter}
+					/>
+				))}
 			</div>
 		</div>
 	);

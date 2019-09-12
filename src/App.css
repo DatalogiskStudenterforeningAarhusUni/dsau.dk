@@ -36,3 +36,10 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+.events__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	padding: 0 50px;
+}

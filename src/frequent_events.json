@@ -1,0 +1,13 @@
+[
+	{
+		"name": "K-LAN",
+		"quarter": 1,
+		"description": "Årligt lan som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad. Derudover er der turneringer i diverse spil med præmier."
+	},
+
+	{
+		"name": "Studiestarts arrangement",
+		"quarter": 3,
+		"description": "Typisk torsag i rusugen afholder DSAU i samarbejde med Prosa spisning for de nye studerende."
+	}
+]
