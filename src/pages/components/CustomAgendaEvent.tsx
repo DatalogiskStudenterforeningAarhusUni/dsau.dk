@@ -2,7 +2,7 @@ import React, { Component, FunctionComponent } from "react";
 import { EventProps } from "react-big-calendar";
 import { MyEvent } from "./interfaces";
 
-export const CustomAgendaEvent = (props: EventProps<MyEvent>) => {
+export const CustomAgendaEvent: React.FC<EventProps<MyEvent>> = props => {
 	return (
 		<div>
 			<em>{props.event.name}</em>

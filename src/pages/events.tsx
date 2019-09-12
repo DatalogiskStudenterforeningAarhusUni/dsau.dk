@@ -3,11 +3,9 @@ import { MyCalendar } from "./components/MyCalendar";
 import { MyEvent, FbEvent } from "./components/interfaces";
 
 export function Events() {
-	//TODO fix interface/type of event
 	const [events, setEvents] = useState<MyEvent[]>([]);
 	useEffect(() => onGetEventsFromFacebook(), []);
 
-	//TODO fetch happens twice on page load
 	//TODO fix token using graph.facebook api
 	const onGetEventsFromFacebook = () => {
 		fetch("https://graph.facebook.com/DSAUdk/events", {
