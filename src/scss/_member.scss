@@ -1,6 +1,6 @@
 .member {
   * {
-    margin: 0;
+    margin: 0 0 5px;
   }
 
   &__image {
@@ -14,5 +14,6 @@
   &__name {
     font-weight: bold;
     height: 40px;
+    font-size: 18px;
   }
 }

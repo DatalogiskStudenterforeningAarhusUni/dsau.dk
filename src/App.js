@@ -3,6 +3,7 @@ import {HashRouter, Route, Link} from "react-router-dom";
 import "./App.css"
 import {Index, About, Contact} from "./pages";
 import Board from "./pages/board";
+import Footer from "./footer";
 
 function AppRouter() {
     return (
@@ -36,6 +37,7 @@ function AppRouter() {
                 <Route path="/kontakt/" component={Contact}/>
                 <Route path="/bestyrelse/" component={Board}/>
             </div>
+            <Footer/>
         </HashRouter>
     );
 }

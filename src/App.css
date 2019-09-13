@@ -1,5 +1,5 @@
 .member * {
-  margin: 0; }
+  margin: 0 0 5px; }
 
 .member__image {
   width: 100%;
@@ -10,7 +10,8 @@
 
 .member__name {
   font-weight: bold;
-  height: 40px; }
+  height: 40px;
+  font-size: 18px; }
 
 .navigation {
   background: #424242;
@@ -45,6 +46,18 @@
   grid-gap: 50px;
   padding: 0 50px; }
 
+.footer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  color: #838383;
+  font-size: 10px; }
+  .footer * {
+    margin: 0; }
+
 .content {
   max-width: 1200px;
-  margin: 0 auto 300px; }
+  margin: 0 auto;
+  padding-bottom: 300px; }
