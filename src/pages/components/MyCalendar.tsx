@@ -4,7 +4,6 @@ import moment from "moment";
 import React from "react";
 import { CustomGeneralEvent } from "./CustomGeneralEvent";
 import { CustomAgendaEvent } from "./CustomAgendaEvent";
-import { BareComponent } from "./BareComponent";
 
 export interface MyCalenderProps {
 	events: any[];
