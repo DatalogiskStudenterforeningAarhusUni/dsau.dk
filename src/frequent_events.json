@@ -2,12 +2,36 @@
 	{
 		"name": "K-LAN",
 		"quarter": 1,
-		"description": "Årligt lan som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad. Derudover er der turneringer i diverse spil med præmier."
+		"description": "Årligt LAN-party som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad (implicit frokost bestående af rester). Derudover er der turneringer i diverse spil med præmier."
 	},
 
 	{
 		"name": "Studiestarts arrangement",
 		"quarter": 3,
-		"description": "Typisk torsag i rusugen afholder DSAU i samarbejde med Prosa spisning for de nye studerende."
+		"description": "Et arrangement som afholdes for de nye studerende. Finder typisk sted torsdag i rusugen arrangeret af DSAU i samarbejde med Prosa. Her er gratis aftensmad og billige drikkevarer."
+	},
+
+	{
+		"name": "Generalforsamling",
+		"quarter": 2,
+		"description": "På generalforsamlingen vælges nye medlemmer ind i DSAUs bestyrelse. Her drøftes forslag og ændringer til vedtægterne også, og de stemmes om blandt de fremmødte medlemmer af foreningen. "
+	},
+
+	{
+		"name": "Social Coding",
+		"quarter": 4,
+		"description": "Til social coding kan man få lov til at arbejde på programmeringsprojekter i fællesskab. Det kan evt. være lidt hobbyprogrammering eller den aflevering som snart skal afleveres. Der vil ofte være en lille morsom præsentation samt rigelig pizza til de fremmødte."
+	},
+
+	{
+		"name": "K-Dag",
+		"quarter": 2,
+		"description": "En karrieremesse afholdt af instituttet for de studerende i hele Katrinebjerg. På dagen ankommer en stor række virksomheder, som forsøger at bejle til de studerende med gratis ting, mad og jobtilbud."
+	},
+
+	{
+		"name": "Diverse Events",
+		"quarter": 0,
+		"description": "Foruden de ovenstående begivenheder bliver der løbende arrangeret en række forskellige arrangementer. Disse kan være alt fra lasertag, klatring på klatrevæg, kurser i frameworks og andre teknologier, osv. Begivenhederne kan sammen med de andre findes på kalenderen her på siden eller på DSAUs Facebookside."
 	}
 ]
