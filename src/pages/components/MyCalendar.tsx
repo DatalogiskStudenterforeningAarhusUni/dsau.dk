@@ -4,6 +4,7 @@ import moment from "moment";
 import React from "react";
 import { CustomGeneralEvent } from "./CustomGeneralEvent";
 import { CustomAgendaEvent } from "./CustomAgendaEvent";
+import { BareComponent } from "./BareComponent";
 
 export interface MyCalenderProps {
 	events: any[];
@@ -37,6 +38,7 @@ export const MyCalendar: React.FC<MyCalenderProps> = props => {
 			events={props.events}
 			localizer={localizer}
 			defaultDate={new Date()}
+			// @ts-ignore
 			components={{
 				event: CustomGeneralEvent,
 				agenda: {
