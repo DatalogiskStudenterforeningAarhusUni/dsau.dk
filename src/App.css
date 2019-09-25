@@ -1,18 +1,3 @@
-.member * {
-  margin: 0 0 5px; }
-
-.member__image {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 10px; }
-
-.member__name {
-  font-weight: bold;
-  height: 40px;
-  font-size: 18px; }
-
 .navigation {
 	background: #424242;
 	margin: 0;
@@ -47,28 +32,9 @@
 	text-decoration: underline;
 }
 
-.board__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 50px;
-  padding: 0 50px; }
-
-.footer {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-  color: #838383;
-  font-size: 10px; }
-  .footer * {
-    margin: 0; }
-
 .content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 300px; }
-
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .events__grid {
