@@ -23,13 +23,13 @@ function AppRouter() {
                             <Link to="/">Hjem</Link>
                         </li>
                         <li>
-                            <Link to="/om/">Om</Link>
+                            <Link to="/om/">Om DSAU</Link>
                         </li>
                         <li>
                             <Link to="/kontakt/">Kontakt</Link>
                         </li>
                         <li>
-                            <Link to="/bestyrelse/">Bestyrelse</Link>
+                            <Link to="/bestyrelse/">Bestyrelsen</Link>
                         </li>
                         <li>
                             <Link to="/events/">Events</Link>

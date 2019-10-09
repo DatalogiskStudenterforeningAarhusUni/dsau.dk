@@ -29,7 +29,7 @@ export function Events() {
 
 	return (
 		<div>
-			<h2>Events</h2>
+			<h1>Events</h1>
 			<div style={{ height: 700 }}>
 				<MyCalendar events={events} />
 			</div>
