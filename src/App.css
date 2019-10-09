@@ -33,9 +33,10 @@
     margin: 0;
     padding: 20px; }
     .navigation__list > * {
-      margin-right: 10px; }
+      margin-right: 20px; }
     .navigation__list * {
       color: white;
+      font-weight: 600;
       text-decoration: none; }
       .navigation__list *:hover {
         text-decoration: underline; }
