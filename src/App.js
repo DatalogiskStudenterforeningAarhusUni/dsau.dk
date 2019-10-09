@@ -20,7 +20,7 @@ function AppRouter() {
                     </Link>
                     <ul className="navigation__list">
                         <li>
-                            <Link to="/">Hjem</Link>
+                            <Link to="/">Forside</Link>
                         </li>
                         <li>
                             <Link to="/om/">Om DSAU</Link>
