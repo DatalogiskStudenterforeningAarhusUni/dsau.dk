@@ -38,7 +38,7 @@ export function Contact() {
         <div>
             <h1>Kontakt os</h1>
             <p>
-                Vi kan kontaktes på vores mailadresse eller via vores <Link to="https://www.facebook.com/DSAUdk/">Facebookside</Link>.
+                Vi kan kontaktes på vores mailadresse eller via vores <a href="https://www.facebook.com/DSAUdk/">Facebookside</a>.
             </p>
             <address>
                 <div>
