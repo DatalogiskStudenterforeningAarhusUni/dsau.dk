@@ -23,16 +23,16 @@ function AppRouter() {
                             <Link to="/">Forside</Link>
                         </li>
                         <li>
+                            <Link to="/events/">Events</Link>
+                        </li>
+                        <li>
+                            <Link to="/bestyrelsen/">Bestyrelsen</Link>
+                        </li>
+                        <li>
                             <Link to="/om/">Om DSAU</Link>
                         </li>
                         <li>
                             <Link to="/kontakt/">Kontakt</Link>
-                        </li>
-                        <li>
-                            <Link to="/bestyrelse/">Bestyrelsen</Link>
-                        </li>
-                        <li>
-                            <Link to="/events/">Events</Link>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +41,7 @@ function AppRouter() {
                 <Route path="/" exact component={Index}/>
                 <Route path="/om/" component={About}/>
                 <Route path="/kontakt/" component={Contact}/>
-                <Route path="/bestyrelse/" component={Board}/>
+                <Route path="/bestyrelsen/" component={Board}/>
                 <Route path="/events/" component={Events}/>
             </div>
             <Footer/>
