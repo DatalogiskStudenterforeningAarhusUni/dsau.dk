@@ -1,0 +1,16 @@
+.about {
+  &__header {
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}

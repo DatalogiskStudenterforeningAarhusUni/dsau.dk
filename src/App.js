@@ -20,10 +20,7 @@ function AppRouter() {
                     </Link>
                     <ul className="navigation__list">
                         <li>
-                            <Link to="/">Forside</Link>
-                        </li>
-                        <li>
-                            <Link to="/events/">Events</Link>
+                            <Link to="/">Events</Link>
                         </li>
                         <li>
                             <Link to="/bestyrelsen/">Bestyrelsen</Link>
@@ -38,11 +35,10 @@ function AppRouter() {
                 </div>
             </nav>
             <div className="content">
-                <Route path="/" exact component={Index}/>
                 <Route path="/om/" component={About}/>
                 <Route path="/kontakt/" component={Contact}/>
                 <Route path="/bestyrelsen/" component={Board}/>
-                <Route path="/events/" component={Events}/>
+                <Route path="/" exact component={Events}/>
             </div>
             <Footer/>
         </HashRouter>
