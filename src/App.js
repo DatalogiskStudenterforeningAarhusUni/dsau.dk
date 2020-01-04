@@ -1,10 +1,11 @@
 import React from "react";
 import { HashRouter, Route, Link } from "react-router-dom";
 import "./App.css";
-import { About, Contact } from "./pages";
-import { Events } from "./pages/events";
-import Board from "./pages/board";
+import Events from "./pages/events";
 import Footer from "./footer";
+import Board from "./pages/board";
+import Contact from "./pages/contact";
+import About from "./pages/about";
 
 function AppRouter() {
 	return (

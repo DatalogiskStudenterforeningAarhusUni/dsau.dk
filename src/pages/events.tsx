@@ -4,7 +4,7 @@ import { MyEvent, FbEvent } from "./components/interfaces";
 import { FrequentEvent } from "./components/FrequentEvent";
 import frequent_events from "../frequent_events.json";
 
-export function Events() {
+export default function Events() {
 	const [events, setEvents] = useState<MyEvent[]>([]);
 	useEffect(() => onGetEventsFromFacebook(), []);
 

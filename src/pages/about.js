@@ -1,0 +1,25 @@
+//TODO add more to about and correct link to vedtægter & referater
+import { Link } from "react-router-dom";
+import React from "react";
+
+export default function About() {
+	return (
+		<div className="about">
+			<h1 className="about__header">Om DSAU</h1>
+			<div className="about__content">
+				<p>
+					<b>D</b>atalogisk <b>S</b>tudenterforening på <b>A</b>arhus{" "}
+					<b>U</b>niversitet er en studenterforening for
+					datalogistuderende på AU. Foreningens opgave er at formidle
+					idéer og forslag fra datalogistuderende til universitet,
+					samt stå for aktiviterer af social- og faglig karakter.
+				</p>
+				<div className="about__links">
+					<h3>Links</h3>
+					<Link to="/om/">Vedtægter</Link>
+					<Link to="/om/">Referater</Link>
+				</div>
+			</div>
+		</div>
+	);
+}
