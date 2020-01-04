@@ -52,7 +52,7 @@
 
 .board__grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-gap: 50px;
 	padding: 0 50px;
 }
@@ -72,22 +72,25 @@
 }
 .events__grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	grid-column-gap: 40px;
 }
 
-.about__header {
+.about__header,
+.contact__header {
 	text-align: center;
 }
 
-.about__links {
+.about__links,
+.contact__links {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.about__content {
+.about__content,
+.contact__content {
 	max-width: 70%;
 	margin: 0 auto;
 }
