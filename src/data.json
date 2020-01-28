@@ -28,13 +28,6 @@
     "email": "erik@dsau.dk"
   },
   {
-    "name": "Ulrik Boll Djurtoft ",
-    "image": "ulrik.jpg",
-    "title": "Revisor",
-    "email": "ulrik@dsau.dk",
-    "class": 2014
-  },
-  {
     "name": "Casper Rysgaard",
     "class": 2017,
     "title": "Menig",
@@ -68,5 +61,19 @@
     "title": "Menig",
     "email": "magdalena@dsau.dk",
     "class": 2018
+  },
+  {
+    "name": "Simon Dohn",
+    "image": "test.png",
+    "title": "Menig",
+    "email": "dohn@dsau.dk",
+    "class": 2019
+  },
+  {
+    "name": "Ulrik Boll Djurtoft ",
+    "image": "ulrik.jpg",
+    "title": "Revisor",
+    "email": "ulrik@dsau.dk",
+    "class": 2014
   }
 ]
