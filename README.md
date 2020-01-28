@@ -18,6 +18,6 @@ The current build is running on [https://soer7022.github.io/dsau.dk/](https://so
 
 -   [ ] Landing page
 -   [ ] About Page
--   [X] Members of the board
+-   [x] Members of the board
 -   [ ] Contact page
--   [X] Events page
+-   [x] Events page
