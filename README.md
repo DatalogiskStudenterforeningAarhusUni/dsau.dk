@@ -12,7 +12,7 @@ Use `npm run deploy` to deploy directly to github pages with static hosting.
 
 ## Viewing the current build
 
-The current build is running on [https://soer7022.github.io/dsau.dk/](https://soer7022.github.io/dsau.dk/)
+The current build is running on [https://dsau.dk/](https://dsau.dk/)
 
 ## Features of the website
 
