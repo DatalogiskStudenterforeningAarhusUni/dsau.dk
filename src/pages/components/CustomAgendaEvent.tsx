@@ -1,4 +1,4 @@
-import React, { Component, FunctionComponent } from "react";
+import React from "react";
 import { EventProps } from "react-big-calendar";
 import { MyEvent } from "./interfaces";
 
@@ -13,6 +13,7 @@ export const CustomAgendaEvent: React.FC<EventProps<MyEvent>> = props => {
 			style={{ color: "#81c341" }}
 			href={"https://facebook.com/events/" + props.event.id}
 			target={"_blank"}
+			rel="noopener noreferrer"
 		>
 			Facebook event
 		</a>
