@@ -23,7 +23,7 @@
   {
     "name": "Erik Funder Carstensen",
     "class": 2017,
-    "title": "Sponsoransvarlig",
+    "title": "Menig",
     "image": "erik.jpg",
     "email": "erik@dsau.dk"
   },
@@ -33,20 +33,6 @@
     "title": "Menig",
     "image": "rysgaard.png",
     "email": "rysgaard@dsau.dk"
-  },
-  {
-    "name": "Christian Zhuang-Qing Nielsen",
-    "class": 2015,
-    "title": "Menig",
-    "image": "christian.jpg",
-    "email": "czn@dsau.dk"
-  },
-  {
-    "name": "Thomas Øther Rasmussen",
-    "image": "oether.jpg",
-    "title": "Menig",
-    "email": "oether@dsau.dk",
-    "class": 2016
   },
   {
     "name": "Jeppe Kristensen",
@@ -68,12 +54,5 @@
     "title": "Menig",
     "email": "dohn@dsau.dk",
     "class": 2019
-  },
-  {
-    "name": "Ulrik Boll Djurtoft ",
-    "image": "ulrik.jpg",
-    "title": "Revisor",
-    "email": "ulrik@dsau.dk",
-    "class": 2014
   }
 ]
