@@ -54,5 +54,26 @@
     "title": "Menig",
     "email": "dohn@dsau.dk",
     "class": 2019
+  },
+  {
+    "name": "Steffan Sølvsten",
+    "image": "steffan.jpg",
+    "title": "Menig",
+    "email": "steffan@dsau.dk",
+    "class": 2015
+  },
+  {
+    "name": "Anna Hallenberg",
+    "image": "anna.jpg",
+    "title": "Menig",
+    "email": "anna@dsau.dk",
+    "class": 2019
+  },
+  {
+    "name": "Anna Kathrine Jensen Skov",
+    "image": "skov.jpg",
+    "title": "Menig",
+    "email": "skov@dsau.dk",
+    "class": 2019
   }
 ]
