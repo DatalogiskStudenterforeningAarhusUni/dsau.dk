@@ -1,7 +1,7 @@
 {
 	"name": "dsau",
-	"version": "0.1.1",
-	"homepage": "https://datalogiskstudenterforeningaarhusuni.github.io/",
+	"version": "1.0.0",
+	"homepage": "https://dsau.dk/",
 	"private": true,
 	"dependencies": {
 		"moment": "^2.24.0",
