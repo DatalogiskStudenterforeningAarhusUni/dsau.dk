@@ -16,7 +16,7 @@ export default function About() {
 				</p>
 				<div className="about__links">
 					<h3>Links</h3>
-					<Link to="/om/">Vedtægter</Link>
+					<a href="https://github.com/DatalogiskStudenterforeningAarhusUni/vedtaegter/blob/master/vedtaegter.pdf">Vedtægter</a>
 					<a href="https://github.com/DatalogiskStudenterforeningAarhusUni/Referater">Referater</a>
 				</div>
 			</div>
