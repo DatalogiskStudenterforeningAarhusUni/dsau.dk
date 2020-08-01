@@ -1,5 +1,3 @@
-//TODO add more to about and correct link to vedtægter & referater
-import { Link } from "react-router-dom";
 import React from "react";
 
 export default function About() {
