@@ -30,6 +30,7 @@ export default function Events() {
 	return (
 		<div>
 			<h1>Events</h1>
+			<h3>BEMÆRK NOGLE AF DE NEDENSTÅENDE EVENTS KAN VÆRE PÅVIRKET AF COVID-19</h3>
 			<p>
 				På denne side finder du vores kalender for events, disse events
 				findes også på vores facebook side. I bunden af siden finder du
