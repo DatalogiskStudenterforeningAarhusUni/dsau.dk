@@ -1,5 +1,5 @@
 # DSAU.dk Repository
-
+![Build and Deploy](https://github.com/DatalogiskStudenterforeningAarhusUni/dsau.dk/workflows/Build%20and%20Deploy/badge.svg?branch=gh-actions)
 This repository contains the react.js project for [DSAU's homepage](http://dsau.dk)
 
 ## Developing
