@@ -8,7 +8,7 @@ Use `npm start` to start a local development server running on `localhost:3000`
 
 ## Deploying
 
-Use `npm run deploy` to deploy directly to github pages with static hosting.
+Upon pushing, the master branch will automatically be deployed 
 
 ## Viewing the current build
 
