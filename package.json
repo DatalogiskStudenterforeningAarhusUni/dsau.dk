@@ -18,9 +18,7 @@
 		"build": "node-sass ./src/scss -o ./src && react-scripts build",
 		"scss": "node-sass --watch ./src/scss -o ./src",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -40,7 +38,6 @@
 	"devDependencies": {
 		"@types/react": "^16.9.2",
 		"@types/react-big-calendar": "^0.22.2",
-		"gh-pages": "^2.1.1",
 		"prettier": "1.18.2"
 	},
 	"prettier": {

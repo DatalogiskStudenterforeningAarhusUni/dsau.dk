@@ -25,7 +25,7 @@
     "class": 2017,
     "title": "Menig",
     "image": "erik.jpg",
-    "email": "erik@dsau.dk"
+    "email": "funder@dsau.dk"
   },
   {
     "name": "Casper Rysgaard",
@@ -66,14 +66,14 @@
     "name": "Anna Hallenberg",
     "image": "anna.jpg",
     "title": "Menig",
-    "email": "anna@dsau.dk",
+    "email": "hallenberg@dsau.dk",
     "class": 2019
   },
   {
     "name": "Anna Kathrine Jensen Skov",
     "image": "skov.jpg",
     "title": "Menig",
-    "email": "skov@dsau.dk",
+    "email": "annaskov@dsau.dk",
     "class": 2019
   }
 ]
