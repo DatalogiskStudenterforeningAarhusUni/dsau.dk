@@ -6,6 +6,8 @@ export default function Contact() {
 		<div className="contact">
 			<h1 className="contact__header">Kontakt os</h1>
 			<div className="contact__content">
+				<p>Vil du arrangere et arrangement sammen med os for datalogi studerende? Så kontakt os!</p>
+				<p>BEMÆRK AT VI OPKRÆVER ET SYMBOLSK BELØB PÅ 750,- I FORBINDELSE MED EVENTS OG ARRANGEMENTER FOR STUDERENDE</p>
 				<p>
 					Vi kan kontaktes på vores mailadresse eller via vores{" "}
 					<a href="https://www.facebook.com/DSAUdk/">Facebookside</a>.
