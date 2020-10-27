@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 //TODO all pages --> Make prettier
 // This is not used anymore
