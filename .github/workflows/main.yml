@@ -1,4 +1,4 @@
-name: Build and test on 3 different node versions
+name: Build and test on 2 different node versions
 
 on: [push]
 
@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.x, 12.x]
 
     steps:
     - uses: actions/checkout@v2
