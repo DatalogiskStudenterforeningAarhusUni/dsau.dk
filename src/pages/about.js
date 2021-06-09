@@ -10,7 +10,7 @@ export default function About() {
 					<b>U</b>niversitet er en studenterforening for
 					datalogistuderende på AU. Foreningens opgave er at formidle
 					idéer og forslag fra datalogistuderende til universitet,
-					samt stå for aktiviterer af social- og faglig karakter.
+					samt stå for aktiviteter af social- og faglig karakter.
 				</p>
 				<div className="about__links">
 					<h3>Links</h3>
