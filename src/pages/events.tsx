@@ -10,13 +10,12 @@ export default function Events() {
 
 	//TODO fix token using graph.facebook api
 	const onGetEventsFromFacebook = () => {
-		fetch("https://graph.facebook.com/DSAUdk/events", {
-			method: "get",
-			headers: new Headers({
-				Authorization:
-					"Bearer EAAeEg2Lpd8EBAOhJ3S7INLOsWzyrZAWJjtohIwO71qrOr75TGj00Rf6C7y6TEv7ZCYDg6ADqzOzZALhRtleZBDOAqZAihZAbPqP3M6zm8rQKtQxyztLFcJyHHR7JuQAMKOphwfm5CHAcQahVfhZCLI2ZC4ghG8FZBmZCbl4oEqZADgj8AZDZD"
-			})
-		})
+		fetch(
+			"https://graph.facebook.com/v11.0/DSAUdk/events?access_token=EAAeEg2Lpd8EBACslcTdZAS6FnHCaJ2ydmL8AS5tNRhdtOPNf98yUHk4XZAMRNZByZCVwCQaoILZA6vxB7zkmZBDPsmUsvCIISfEBfZBMKnRR5ZBJUAtXRKI62QZCUlgiwGHVQrrEy2GwoCflemviBUoGtfcmLX3OxNEtQWxLPu2HSchuBC5jq2CuU",
+			{
+				method: "get"
+			}
+		)
 			.then(responce => responce.json())
 			.then(json => {
 				const data = json.data;
@@ -30,7 +29,10 @@ export default function Events() {
 	return (
 		<div>
 			<h1>Events</h1>
-			<h4 style={{color:"red"}}>BEMÆRK NOGLE AF DE NEDENSTÅENDE EVENTS KAN VÆRE PÅVIRKET AF COVID-19</h4>
+			<h4 style={{ color: "red" }}>
+				BEMÆRK NOGLE AF DE NEDENSTÅENDE EVENTS KAN VÆRE PÅVIRKET AF
+				COVID-19
+			</h4>
 			<p>
 				På denne side finder du vores kalender for events, disse events
 				findes også på vores facebook side. I bunden af siden finder du
