@@ -1,79 +1,72 @@
 [
-  {
-    "name": "Kristoffer Strube",
-    "class": 2017,
-    "title": "Formand",
-    "image": "strube.jpg",
-    "email": "strube@dsau.dk"
-  },
-  {
-    "name": "Søren Eriksen",
-    "class": 2017,
-    "title": "Næstformand",
-    "image": "søren.jpg",
-    "email": "eriksen@dsau.dk"
-  },
-  {
-    "name": "Mathias Tversted",
-    "image": "tversted.jpg",
-    "title": "Kasserer",
-    "email": "tversted@dsau.dk",
-    "class": 2017
-  },
-  {
-    "name": "Erik Funder Carstensen",
-    "class": 2017,
-    "title": "Menig",
-    "image": "erik.jpg",
-    "email": "funder@dsau.dk"
-  },
-  {
-    "name": "Casper Rysgaard",
-    "class": 2017,
-    "title": "Menig",
-    "image": "rysgaard.png",
-    "email": "rysgaard@dsau.dk"
-  },
-  {
-    "name": "Jeppe Kristensen",
-    "image": "jeppe.jpg",
-    "title": "Menig",
-    "email": "jeppe@dsau.dk",
-    "class": 2017
-  },
-  {
-    "name": "Magdalena Kalin",
-    "image": "magdalena.jpg",
-    "title": "Menig",
-    "email": "magdalena@dsau.dk",
-    "class": 2018
-  },
-  {
-    "name": "Simon Dohn",
-    "image": "dohn.jpg",
-    "title": "Menig",
-    "email": "floedefyr@dsau.dk",
-    "class": 2019
-  },
-  {
-    "name": "Steffan Sølvsten",
-    "image": "steffan.jpg",
-    "title": "Menig",
-    "email": "steffan@dsau.dk",
-    "class": 2015
-  },
-  {
-    "name": "Anna Hallenberg",
-    "image": "anna.jpg",
-    "title": "Menig",
-    "email": "hallenberg@dsau.dk",
-    "class": 2019
-  },
-  {
-    "name": "Anna Kathrine Jensen Skov",
-    "image": "skov.jpg",
-    "title": "Menig",
-    "email": "annaskov@dsau.dk",
-    "class": 2019
-  }
+	{
+		"name": "Simon Dohn",
+		"image": "dohn.jpg",
+		"title": "Formand",
+		"email": "floedefyr@dsau.dk",
+		"class": 2019
+	},
+	{
+		"name": "Kristoffer Strube",
+		"class": 2017,
+		"title": "Næstformand",
+		"image": "strube.jpg",
+		"email": "strube@dsau.dk"
+	},
+	{
+		"name": "Anna Kathrine Jensen Skov",
+		"image": "skov.jpg",
+		"title": "Kasserer",
+		"email": "annaskov@dsau.dk",
+		"class": 2019
+	},
+	{
+		"name": "Mathias Tversted",
+		"image": "tversted.jpg",
+		"title": "Menig",
+		"email": "tversted@dsau.dk",
+		"class": 2017
+	},
+	{
+		"name": "Erik Funder Carstensen",
+		"class": 2017,
+		"title": "Menig",
+		"image": "erik.jpg",
+		"email": "funder@dsau.dk"
+	},
+	{
+		"name": "Casper Rysgaard",
+		"class": 2017,
+		"title": "Menig",
+		"image": "rysgaard.png",
+		"email": "rysgaard@dsau.dk"
+	},
+	{
+		"name": "Jeppe Kristensen",
+		"image": "jeppe.jpg",
+		"title": "Menig",
+		"email": "jeppe@dsau.dk",
+		"class": 2017
+	},
+	{
+		"name": "Magdalena Kalin",
+		"image": "magdalena.jpg",
+		"title": "Menig",
+		"email": "magdalena@dsau.dk",
+		"class": 2018
+	},
+	{
+		"name": "Steffan Sølvsten",
+		"image": "steffan.jpg",
+		"title": "Menig",
+		"email": "steffan@dsau.dk",
+		"class": 2015
+	},
+	{
+		"name": "Anna Hallenberg",
+		"image": "anna.jpg",
+		"title": "Menig",
+		"email": "hallenberg@dsau.dk",
+		"class": 2019
+	}
 ]
