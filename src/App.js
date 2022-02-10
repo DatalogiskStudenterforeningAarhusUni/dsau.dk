@@ -35,12 +35,14 @@ function AppRouter() {
 					</ul>
 				</div>
 			</nav>
-			<Routes className="content">
-				<Route path="/om/" element={<About/>} />
-				<Route path="/kontakt/" element={<Contact/>} />
-				<Route path="/bestyrelsen/" element={<Board/>} />
-				<Route path="/" exact element={<Events/>} />
-			</Routes>
+			<div className="content">
+				<Routes >
+					<Route path="/om/" element={<About />} />
+					<Route path="/kontakt/" element={<Contact />} />
+					<Route path="/bestyrelsen/" element={<Board />} />
+					<Route path="/" exact element={<Events />} />
+				</Routes>
+			</div>
 			<Footer />
 		</HashRouter>
 	);
