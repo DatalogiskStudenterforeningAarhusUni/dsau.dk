@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route, Link, Routes } from "react-router-dom";
 import "./App.css";
 import Events from "./pages/events";
 import Footer from "./footer";
@@ -35,12 +35,12 @@ function AppRouter() {
 					</ul>
 				</div>
 			</nav>
-			<div className="content">
-				<Route path="/om/" component={About} />
-				<Route path="/kontakt/" component={Contact} />
-				<Route path="/bestyrelsen/" component={Board} />
-				<Route path="/" exact component={Events} />
-			</div>
+			<Routes className="content">
+				<Route path="/om/" element={<About/>} />
+				<Route path="/kontakt/" element={<Contact/>} />
+				<Route path="/bestyrelsen/" element={<Board/>} />
+				<Route path="/" exact element={<Events/>} />
+			</Routes>
 			<Footer />
 		</HashRouter>
 	);
