@@ -1,6 +1,15 @@
 import React from "react";
 
-export default function Member(props) {
+interface MemberInfo {
+	key: string,
+	name: string,
+	image: string,
+	title: string,
+	email: string,
+	class: number,
+}
+
+export default function Member(props: MemberInfo): JSX.Element {
 	return (
 		<div className="member">
 			{props.image ? (
