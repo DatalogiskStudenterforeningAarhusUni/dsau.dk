@@ -68,5 +68,19 @@
 		"title": "Menig",
 		"email": "hallenberg@dsau.dk",
 		"class": 2019
+	},
+	{
+		"name": "Andreas Jakobsen",
+		"image": "tmp.png",
+		"title": "Menig",
+		"email": "andr462c@hotmail.com",
+		"class": 2019
+	},
+	{
+		"name": "Harith Rathish",
+		"email": "harith.rathish@gmail.com",
+		"class": 2021,
+		"image": "tmp.png",
+		"title": "Menig"
 	}
 ]
