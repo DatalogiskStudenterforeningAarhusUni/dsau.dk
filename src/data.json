@@ -1,36 +1,37 @@
 [
 	{
+		"name": "Sebastian Fruensgaard",
+		"image": "sebastial.jpg",
+		"title": "Formand",
+		"email": "dsau@dsau.dk",
+		"class": 2020
+	},
+	{
+		"name": "Asger Andersen",
+		"image": "asger.jpg",
+		"title": "Kasserer",
+		"email": "dsau@dsau.dk",
+		"class": 2019
+	},
+	{
+		"name": "Kjeld Lück",
+		"image": "keld.png",
+		"title": "tmp.png",
+		"email": "dsau@dsau.dk",
+		"class": 2021
+	},
+	
+	{
 		"name": "Andreas Jakobsen",
 		"image": "andreas.png",
-		"title": "Formand",
+		"title": "Menig",
 		"email": "andr462c@hotmail.com",
 		"class": 2019
 	},
 	{
-		"name": "Louise Dohn",
-		"email": "dohnjr@dsau.dk",
-		"class": 2019,
-		"image": "louise.jpg",
-		"title": "Næstformand"
-	},
-	{
-		"name": "Erik Funder Carstensen",
-		"class": 2017,
-		"title": "Kasserer",
-		"image": "erik.jpg",
-		"email": "funder@dsau.dk"
-	},
-	{
-		"name": "Steffan Sølvsten",
-		"image": "steffan.jpg",
-		"title": "Menig",
-		"email": "steffan@dsau.dk",
-		"class": 2015
-	},
-	{
-		"name": "Harith Rathish",
-		"email": "harith@dsau.dk",
-		"class": 2021,
+		"name": "Klara Øvlisen",
+		"email": "dsau@dsau.dk",
+		"class": 2020,
 		"image": "tmp.png",
 		"title": "Menig"
 	},
@@ -49,10 +50,10 @@
 		"title": "Menig"
 	},
 	{
-		"name": "Mikkel Ugilt",
-		"email": "ugilt@dsau.dk",
-		"class": 2021,
-		"image": "mikkel.jpg",
-		"title": "Menig"
+		"name": "Louise Dohn",
+		"email": "dohnjr@dsau.dk",
+		"class": 2019,
+		"image": "louise.jpg",
+		"title": "Næstformand"
 	}
 ]
