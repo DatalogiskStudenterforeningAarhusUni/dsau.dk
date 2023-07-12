@@ -3,21 +3,21 @@
 		"name": "Sebastian Fruensgaard",
 		"image": "sebastian.jpg",
 		"title": "Formand",
-		"email": "dsau@dsau.dk",
+		"email": "sebastian@dsau.dk",
 		"class": 2020
 	},
 	{
 		"name": "Asger Andersen",
 		"image": "asger.jpg",
 		"title": "Kasserer",
-		"email": "dsau@dsau.dk",
+		"email": "asger@dsau.dk",
 		"class": 2019
 	},
 	{
 		"name": "Kjeld Lück",
 		"image": "tmp.png",
 		"title": "Menig",
-		"email": "dsau@dsau.dk",
+		"email": "kjeld@dsau.dk",
 		"class": 2021
 	},
 	
@@ -25,12 +25,12 @@
 		"name": "Andreas Jakobsen",
 		"image": "andreas.png",
 		"title": "Menig",
-		"email": "andr462c@hotmail.com",
+		"email": "andreas@dsau.dk",
 		"class": 2019
 	},
 	{
 		"name": "Klara Øvlisen",
-		"email": "dsau@dsau.dk",
+		"email": "klara@dsau.dk",
 		"class": 2020,
 		"image": "tmp.png",
 		"title": "Menig"
