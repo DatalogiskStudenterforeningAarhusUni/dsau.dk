@@ -7,6 +7,13 @@
 		"class": 2020
 	},
 	{
+		"name": "Louise Dohn",
+		"email": "dohnjr@dsau.dk",
+		"class": 2019,
+		"image": "louise.jpg",
+		"title": "Næstformand"
+	},
+	{
 		"name": "Asger Andersen",
 		"image": "asger.jpg",
 		"title": "Kasserer",
@@ -36,7 +43,7 @@
 		"title": "Menig"
 	},
 	{
-		"name": "Asta Lundbæk",
+		"name": "Asta Lundbek",
 		"email": "asta@dsau.dk",
 		"class": 2020,
 		"image": "tmp.png",
@@ -48,12 +55,5 @@
 		"class": 2020,
 		"image": "freja.jpg",
 		"title": "Menig"
-	},
-	{
-		"name": "Louise Dohn",
-		"email": "dohnjr@dsau.dk",
-		"class": 2019,
-		"image": "louise.jpg",
-		"title": "Næstformand"
 	}
 ]
