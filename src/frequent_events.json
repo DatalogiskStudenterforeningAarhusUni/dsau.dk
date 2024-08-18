@@ -2,13 +2,13 @@
 	{
 		"name": "K-LAN",
 		"quarter": 1,
-		"description": "Årligt LAN-party som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad (implicit frokost bestående af rester). Derudover er der turneringer i diverse spil med præmier."
+		"description": "Årligt LAN-party som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad. Derudover er der turneringer i diverse spil med præmier."
 	},
 
 	{
 		"name": "Studiestartsarrangement",
 		"quarter": 3,
-		"description": "Et arrangement som afholdes for de nye studerende. Finder typisk sted torsdag i rusugen arrangeret af DSAU i samarbejde med Prosa. Her er gratis aftensmad og billige drikkevarer."
+		"description": "Et arrangement som afholdes for de nye studerende. Finder typisk sted torsdag i rusugen arrangeret af DSAU."
 	},
 
 	{
@@ -18,9 +18,9 @@
 	},
 
 	{
-		"name": "Social Coding",
+		"name": "K-Jam",
 		"quarter": 4,
-		"description": "Til social coding kan man få lov til at arbejde på programmeringsprojekter i fællesskab. Det kan evt. være lidt hobbyprogrammering eller den aflevering som snart skal afleveres. Der vil ofte være en lille morsom præsentation samt rigelig pizza til de fremmødte."
+		"description": "Et årligt Game Jam som bliver holdt i efteråret. Det gælder om at lave det bedste spil inden for et emne. Spil vil blive bedømt i forhold til forskellige kategorier og der vil være præmier til vinderne."
 	},
 
 	{
