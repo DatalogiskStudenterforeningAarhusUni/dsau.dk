@@ -7,53 +7,52 @@
 		"class": 2020
 	},
 	{
-		"name": "Louise Dohn",
-		"email": "dohnjr@dsau.dk",
-		"class": 2019,
-		"image": "louise.jpg",
-		"title": "Næstformand"
-	},
-	{
-		"name": "Asger Andersen",
-		"image": "asger.jpg",
-		"title": "Kasserer",
-		"email": "asger@dsau.dk",
-		"class": 2019
-	},
-	{
-		"name": "Kjeld Lück",
+		"name": "Asta Lundbek",
+		"email": "asta@dsau.dk",
+		"class": 2020,
 		"image": "tmp.png",
-		"title": "Menig",
-		"email": "kjeld@dsau.dk",
-		"class": 2021
-	},
-	
-	{
-		"name": "Andreas Jakobsen",
-		"image": "andreas.png",
-		"title": "Menig",
-		"email": "andreas@dsau.dk",
-		"class": 2019
+		"title": "Næstformand"
 	},
 	{
 		"name": "Klara Øvlisen",
 		"email": "klara@dsau.dk",
 		"class": 2020,
 		"image": "tmp.png",
-		"title": "Menig"
-	},
-	{
-		"name": "Asta Lundbek",
-		"email": "asta@dsau.dk",
-		"class": 2020,
-		"image": "tmp.png",
-		"title": "Menig"
+		"title": "Kasserer"
 	},
 	{
 		"name": "Freja Dahl",
 		"email": "frh@dsau.dk",
 		"class": 2020,
 		"image": "freja.jpg",
+		"title": "Menig"
+	},
+	{
+		"name": "Markus Mathiasen",
+		"email": "markus@dsau.dk",
+		"class": 2020,
+		"image": "tmp.jpg",
+		"title": "Menig"
+	},
+	{
+		"name": "Jesper Christensen",
+		"email": "jesper@dsau.dk",
+		"class": 2020,
+		"image": "tmp.jpg",
+		"title": "Menig"
+	},
+	{
+		"name": "Andreas HHH",
+		"email": "hhh@dsau.dk",
+		"class": 2021,
+		"image": "tmp.jpg",
+		"title": "Menig"
+	},
+	{
+		"name": "Morten Fausing",
+		"email": "morten@dsau.dk",
+		"class": 2023,
+		"image": "tmp.jpg",
 		"title": "Menig"
 	}
 ]
