@@ -62,16 +62,16 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 40px; }
 
-.about__header, .contact__header {
+.about__header, .contact__header, .underforeninger__header, .matroska__header, .rc__header {
   text-align: center; }
 
-.about__links, .contact__links {
+.about__links, .contact__links, .underforeninger__links, .matroska__links, .rc__links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.about__content, .contact__content {
+.about__content, .contact__content, .underforeninger__content, .matroska__content, .rc__content {
   max-width: 70%;
   margin: 0 auto; }
 
@@ -85,6 +85,14 @@
   font-size: 10px; }
   .footer * {
     margin: 0; }
+
+.matroska__hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray; }
 
 .content {
   max-width: 1200px;
