@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import Underforeninger from "./pages/underforeninger";
 import Matroska from "./pages/matroska";
+import Popcorn from "./pages/popcorn";
 import Rc from "./pages/rc";
 
 function AppRouter() {
@@ -49,6 +50,7 @@ function AppRouter() {
 					<Route path="/" exact element={<Events />} />
 					<Route path="/underforeninger/" exact element={<Underforeninger />} />
 					<Route path="/matroska/" exact element={<Matroska />} />
+					<Route path="/popcorn/" exact element={<Popcorn />} />
 					<Route path="/rc/" exact element={<Rc />} />
 				</Routes>
 			</div>

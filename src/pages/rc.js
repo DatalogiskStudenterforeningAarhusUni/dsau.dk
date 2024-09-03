@@ -1,8 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FiArrowLeftCircle } from "react-icons/fi";
 
 export default function Rc() {
 	return (
 		<div className="rc">
+			<div className="rc__content">
+                <div className="rc__backbutton">
+                    <Link to="/underforeninger/">
+                        <FiArrowLeftCircle size={50} color={'grey'}/>
+                    </Link>
+                </div>
+            </div>
 			<h1 className="rc__header">Regnecentralen</h1>
 			<div className="rc__content">
 				<div className="rc__header">
