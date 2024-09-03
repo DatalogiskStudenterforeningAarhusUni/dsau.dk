@@ -23,5 +23,5 @@ The current build is running on [https://dsau.dk/](https://dsau.dk/)
 -   [x] Contact page
 -   [x] Events page
 -   [x] Underforeninger
--   [x] Matroska page
--   [x] RC page
+-   [x] Matroska page (and popcorn machine rental page)
+-   [x] Regnecentralen page
