@@ -62,18 +62,24 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-column-gap: 40px; }
 
-.about__header, .contact__header {
+.about__header, .contact__header, .underforeninger__header, .matroska__header, .rc__header, .popcorn__header {
   text-align: center; }
 
-.about__links, .contact__links {
+.about__links, .contact__links, .underforeninger__links, .matroska__links, .rc__links, .popcorn__links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.about__content, .contact__content {
+.about__content, .contact__content, .underforeninger__content, .matroska__content, .rc__content, .popcorn__content {
   max-width: 70%;
   margin: 0 auto; }
+
+.about__backbutton, .contact__backbutton, .underforeninger__backbutton, .matroska__backbutton, .rc__backbutton, .popcorn__backbutton {
+  margin-top: 15px; }
+
+.about__backbutton:hover, .contact__backbutton:hover, .underforeninger__backbutton:hover, .matroska__backbutton:hover, .rc__backbutton:hover, .popcorn__backbutton:hover {
+  opacity: 0.5; }
 
 .footer {
   width: 100%;
@@ -85,6 +91,48 @@
   font-size: 10px; }
   .footer * {
     margin: 0; }
+
+.matroska__hr, .popcorn__hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 2px;
+  border-width: 0;
+  color: gray;
+  background-color: gray; }
+
+.underforeninger__container {
+  position: relative;
+  width: 200px; }
+
+.underforeninger__image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden; }
+
+.underforeninger__middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.underforeninger__container:hover .underforeninger__image {
+  opacity: 0.3; }
+
+.underforeninger__container:hover .underforeninger__middle {
+  opacity: 1; }
+
+.underforeninger__text {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px 32px; }
 
 .content {
   max-width: 1200px;

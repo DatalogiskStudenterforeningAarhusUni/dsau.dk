@@ -1,4 +1,4 @@
-.about, .contact {
+.about, .contact, .underforeninger, .matroska, .rc, .popcorn {
   &__header {
     text-align: center;
   }
@@ -12,5 +12,11 @@
   &__content {
     max-width: 70%;
     margin: 0 auto;
+  }
+  &__backbutton {
+    margin-top: 15px;
+  }
+  &__backbutton:hover {
+    opacity: 0.5;
   }
 }
