@@ -16,7 +16,7 @@ export default function Popcorn() {
 			<h1 className="popcorn__header">Udlejning af Matroskas popcornmaskine</h1>
 			<div className="popcorn__content">
 				<div className="popcorn__header">
-					<img src="/images/matroska/matroska_popcornsmaskine.jpg" alt="QR-Code to Matriska Facebook" width="300" float="right"></img>
+					<img src="/images/matroska/matroskaPopcornmaskine.jpg" alt="Matriska Popcornmaskine" width="300" float="right"></img>
 				</div>
 				<h3>Regler for udlejning</h3>
 				<p>

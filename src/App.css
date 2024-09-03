@@ -76,8 +76,7 @@
   margin: 0 auto; }
 
 .about__backbutton, .contact__backbutton, .underforeninger__backbutton, .matroska__backbutton, .rc__backbutton, .popcorn__backbutton {
-  margin-top: 15px;
-  fill: #424242; }
+  margin-top: 15px; }
 
 .about__backbutton:hover, .contact__backbutton:hover, .underforeninger__backbutton:hover, .matroska__backbutton:hover, .rc__backbutton:hover, .popcorn__backbutton:hover {
   opacity: 0.5; }
