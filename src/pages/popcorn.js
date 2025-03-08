@@ -31,9 +31,6 @@ export default function Popcorn() {
 						til arrangementer med tilknytning til udvalget</b>.
 					</li>
 					<li>
-						Vi tager <b>200,-</b> pr. leje, som bl.a. går til vedligehold af maskinen.
-					</li>
-					<li>
 						Du <b>skal SELV købe popcornkerner, olie og bægre</b>, men du må gerne bruge af det salt, som ligger i vognen.
 					</li>
 					<li>
