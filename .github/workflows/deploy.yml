@@ -26,7 +26,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - name: Install deps
-        run: npm ci
+        run: npm install
       - name: Build
         run: npm run build
       - name: Upload artifact
