@@ -1,67 +1,58 @@
-import React, { useEffect, useState } from "react";
-import { MyCalendar } from "./components/MyCalendar";
-import { MyEvent, FbEvent } from "./components/interfaces";
-import { FrequentEvent } from "./components/FrequentEvent";
-import frequent_events from "../frequent_events.json";
+import frequentEvents from "../data/frequent_events.json";
+import events from "../data/calendar_events.json";
+import { Button } from "../components/ui/button";
+import { ExternalLink } from "lucide-react";
+import StaticCalendar from "../components/calendar/StaticCalendar";
+import { useI18n } from "../i18n/I18nContext";
+import Seo from "../components/Seo";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 export default function Events() {
-	const [events, setEvents] = useState<MyEvent[]>([]);
-	useEffect(() => onGetEventsFromFacebook(), []);
+  const { t, lang } = useI18n()
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <Seo titleKey="events.title" descriptionKey="events.intro" />
+      <h1 className="text-3xl font-bold mb-4 text-foreground dark:text-white">{t('events.title')}</h1>
+      <p className="text-neutral-700 dark:text-neutral-300 mb-6">{t('events.intro')}</p>
 
-	//TODO fix token using graph.facebook api
-	const onGetEventsFromFacebook = () => {
-		fetch(
-			"https://graph.facebook.com/v11.0/DSAUdk/events?access_token=EAAeEg2Lpd8EBACslcTdZAS6FnHCaJ2ydmL8AS5tNRhdtOPNf98yUHk4XZAMRNZByZCVwCQaoILZA6vxB7zkmZBDPsmUsvCIISfEBfZBMKnRR5ZBJUAtXRKI62QZCUlgiwGHVQrrEy2GwoCflemviBUoGtfcmLX3OxNEtQWxLPu2HSchuBC5jq2CuU",
-			{
-				method: "get"
-			}
-		)
-			.then(responce => responce.json())
-			.then(json => {
-				const data = json.data;
-				for (let i = 0; i < data.length; i++) {
-					data[i] = formatEvent(data[i]);
-				}
-				setEvents(data);
-			});
-	};
+      <div className="mb-6">
+        <StaticCalendar events={events} />
+      </div>
 
-	return (
-		<div>
-			<h1>Events</h1>
-			<p>
-				På denne side finder du vores kalender for events, disse events
-				findes også på vores facebook side. I bunden af siden finder du
-				en liste over de events der afholdes årligt samt tidspunkter for
-				disse events.
-			</p>
-			<div style={{ height: 700 }}>
-				<MyCalendar events={events} />
-			</div>
-			<div className="events">
-				<h2>Årlige events</h2>
-				<div className="events__grid">
-					{frequent_events.map(e => (
-						<FrequentEvent
-							name={e.name}
-							description={e.description}
-							quarter={e.quarter}
-						/>
-					))}
-				</div>
-			</div>
-		</div>
-	);
-}
-
-function formatEvent(json: FbEvent): MyEvent {
-	return {
-		description: json.description,
-		end: new Date(json.end_time),
-		id: json.id,
-		location: json.place.name,
-		name: json.name,
-		start: new Date(json.start_time),
-		allday: false
-	};
+      <div className="mb-10">
+        <Button asChild>
+          <a href="https://www.facebook.com/DSAUdk/" target="_blank" rel="noreferrer">
+            {t('events.ctaFacebook')} <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
+        </Button>
+      </div>
+      
+      <section>
+        <h2 className="text-2xl font-semibold mb-3">{t('events.annualTitle')}</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+          {frequentEvents.map((e: any, i: number) => (
+            <Card key={e?.name?.da || e?.name?.en || e?.name || i}>
+              <CardHeader>
+                <CardTitle>
+                  {(e.name && e.name[lang]) || e.name}
+                </CardTitle>
+                {(e.quarter || e.quarter === 0) && (
+                  <p className="text-sm text-muted-foreground">
+                    {/* if quarter 0 then it is all year around*/}
+                    {e.quarter === 0 ? 'Hele året' : `Q${e.quarter}`}
+                  </p>
+                )}
+              </CardHeader>
+              <CardContent>
+                <CardDescription>
+                  {(e.description && e.description[lang]) || e.description}
+                </CardDescription>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }

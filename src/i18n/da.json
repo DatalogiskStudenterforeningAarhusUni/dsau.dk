@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "events": "Events",
+    "underforeninger": "Underforeninger",
+    "board": "Bestyrelsen",
+    "about": "Om DSAU",
+    "contact": "Kontakt"
+  },
+  "events": {
+    "title": "Events",
+    "intro": "Herunder finder du kalenderen med kommende aktiviteter. Følg vores Facebookside for tilmelding og opdateringer.",
+    "annualTitle": "Årlige events",
+    "ctaFacebook": "Se aktuelle events"
+  },
+  "underforeninger": {
+    "title": "Underforeninger",
+    "intro": "DSAU har en række underforeninger, som står for aktiviteter i hverdagen omkring datalogi. Læs mere herunder.",
+    "rc": "Regnecentralen",
+    "matroska": "Matroska"
+  },
+  "board": {
+    "title": "Bestyrelsen",
+    "intro": "Bestyrelsen består af et udvalg af studerende fra diverse årgange på Aarhus Universitet. Se medlemmerne herunder."
+  },
+  "about": {
+    "title": "Om DSAU",
+    "body1": "Datalogisk Studenterforening på Aarhus Universitet er en studenterforening for datalogistuderende på AU. Foreningen formidler idéer og forslag fra studerende til instituttet og står for sociale og faglige aktiviteter.",
+    "links": "Links",
+    "vedtaegter": "Vedtægter",
+    "referater": "Referater"
+  },
+  "contact": {
+    "title": "Kontakt os",
+    "p1": "Vil du arrangere et arrangement sammen med os for datalogistuderende? Så kontakt os!",
+    "p2": "BEMÆRK: Vi opkræver et beløb på 750,- i forbindelse med events.",
+    "p3": "Vi kan kontaktes på vores mailadresse eller via vores Facebookside.",
+    "address": "Adresse",
+    "mail": "Mail"
+  },
+  "rc": {
+    "title": "Regnecentralen",
+    "p1": "Regnecentralen (eller ‘RC’ i daglig tale) er et fællesskab og socialt forum – både digitalt og et fysisk lokale – for studerende på Datalogi og IT-Produktudvikling ved Aarhus Universitet.",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "address": "Adresse",
+    "mail": "Mail"
+  },
+  "matroska": {
+    "title": "Matroska",
+    "p1": "Matroska er et frivilligt udvalg på Institut for Datalogi, som typisk afholder to til tre filmaftener om året.",
+    "p2": "Det er gratis at deltage. Man ser typisk to film, og imellem filmene er der aftensmad sponsoreret af en venlig sponsor, som før første film holder et kort oplæg.",
+    "p3": "Vil du være med i udvalget og hjælpe til? Skriv en mail eller kontakt en fra udvalget.",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "mail": "Mail",
+    "popcornLink": "Ønsker du at leje popcornmaskinen? Se her."
+  },
+  "popcorn": {
+    "title": "Udlejning af Matroskas popcornmaskine",
+    "rules": "Regler for udlejning",
+    "intro": "Det er muligt at låne vores popcornmaskine, hvis den ikke allerede er udlånt den pågældende dag, ved at udfylde ansøgningsformularen via linket nedenfor. Bemærk reglerne:",
+    "li1": "Popcornmaskinen udlånes kun til interne arrangementer eller arrangementer med tilknytning til udvalget.",
+    "li2": "Du skal selv købe popcornkerner, olie og bægre. Du må gerne bruge af saltet i vognen.",
+    "li3": "Hent gerne popcornmaskinen i Hopper-0 og stil den rengjort tilbage efter brug.",
+    "li4": "Skriv i god tid. Vi er frivillige; der kan gå lidt tid før svar.",
+    "cta": "Udfyld ansøgning"
+  },
+  "calendar": {
+    "month": "Måned",
+    "week": "Uge",
+    "today": "I dag",
+    "noEvents": "Ingen events",
+    "allDay": "Hele dagen"
+  }
+  ,
+  "common": {
+    "back": "Tilbage"
+  }
+}
