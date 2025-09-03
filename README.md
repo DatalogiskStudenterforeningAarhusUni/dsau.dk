@@ -5,7 +5,7 @@ This repository contains the react.js project for [DSAU's homepage](http://dsau.
 
 ## Developing
 
-Use `npm run start` to start a local development server running on `localhost:5173`
+Use `npm run dev` to start a local development server running on `localhost:5173`
 
 ## Deploying
 
