@@ -1,4 +1,4 @@
-name: Build & test on two Node versions
+name: Build & Test
 
 on:
   push:
@@ -7,49 +7,29 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version: [18.x, 20.x]
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 20.19
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20.19.0
           cache: npm
+
+      - name: Print versions
+        run: |
+          node -v
+          npm -v
 
       - name: Install deps
         run: npm ci
 
-      # Optional: TS type-check if you have tsconfig.json
-      - name: Type check
-        if: hashFiles('tsconfig.json') != ''
-        run: npx tsc -noEmit
-
       - name: Build
         run: npm run build
 
-      - name: Prepare static site extras (CNAME / 404 / nojekyll)
-        run: |
-          mkdir -p dist
-          touch dist/.nojekyll
-          if [ -f public/CNAME ]; then cp public/CNAME dist/CNAME; fi
-          if [ -f dist/index.html ]; then cp dist/index.html dist/404.html; fi
-
-      # Only run tests if there are any test/spec files
       - name: Test
         if: hashFiles('**/*.{test,spec}.{js,jsx,ts,tsx}') != ''
         run: npm test -- --run
         env:
           CI: true
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist-${{ matrix.node-version }}
-          path: |
-            dist
-            !dist/**/*.map
