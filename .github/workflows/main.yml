@@ -1,24 +1,55 @@
-name: Build and test on 2 different node versions
+name: Build & test on two Node versions
 
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
+      fail-fast: false
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [18.x, 20.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
-      env:
-        CI: true
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      # Optional: TS type-check if you have tsconfig.json
+      - name: Type check
+        if: hashFiles('tsconfig.json') != ''
+        run: npx tsc -noEmit
+
+      - name: Build
+        run: npm run build
+
+      - name: Prepare static site extras (CNAME / 404 / nojekyll)
+        run: |
+          mkdir -p dist
+          touch dist/.nojekyll
+          if [ -f public/CNAME ]; then cp public/CNAME dist/CNAME; fi
+          if [ -f dist/index.html ]; then cp dist/index.html dist/404.html; fi
+
+      # Only run tests if there are any test/spec files
+      - name: Test
+        if: hashFiles('**/*.{test,spec}.{js,jsx,ts,tsx}') != ''
+        run: npm test -- --run
+        env:
+          CI: true
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.node-version }}
+          path: |
+            dist
+            !dist/**/*.map
