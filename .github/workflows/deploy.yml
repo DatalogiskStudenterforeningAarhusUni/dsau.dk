@@ -1,47 +1,36 @@
-name: Deploy to GitHub Pages
+name: Build & Publish (gh-pages branch)
 
 on:
   push:
-    branches: [ main, master ]
-  workflow_dispatch:
+    branches: [ main ]   # or your default branch
 
 permissions:
-  pages: write
-  id-token: write
-  contents: read
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write        # needed to push to gh-pages
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
+      - uses: actions/checkout@v4
+
+      - name: Use Node 20.19
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-      - name: Install deps
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          node-version: 20.19.0
+          cache: npm
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Prepare Pages extras
+        run: |
+          touch dist/.nojekyll
+          [ -f public/CNAME ] && cp public/CNAME dist/CNAME || true
+          [ -f dist/index.html ] && cp dist/index.html dist/404.html || true
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # keep_history: true   # optional
