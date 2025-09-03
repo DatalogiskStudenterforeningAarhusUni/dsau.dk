@@ -23,7 +23,7 @@ jobs:
           npm -v
 
       - name: Install deps
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
