@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "events": "Events",
+    "underforeninger": "Sub-association",
+    "board": "Board",
+    "about": "About DSAU",
+    "contact": "Contact"
+  },
+  "events": {
+    "title": "Events",
+    "intro": "Below is our calendar with upcoming activities. Follow our Facebook page for registrations and updates.",
+    "annualTitle": "Annual events",
+    "ctaFacebook": "See current events"
+  },
+  "underforeninger": {
+    "title": "Subgroups",
+    "intro": "DSAU has several subgroups running activities around the department. Learn more below.",
+    "rc": "Regnecentralen",
+    "matroska": "Matroska"
+  },
+  "board": {
+    "title": "Board",
+    "intro": "The board consists of students across cohorts at Aarhus University. See members below."
+  },
+  "about": {
+    "title": "About DSAU",
+    "body1": "The Computer Science Student Association at Aarhus University is a student-run organization for CS students at AU. We represent student ideas and suggestions to the department and organize social and academic activities.",
+    "links": "Links",
+    "vedtaegter": "Bylaws",
+    "referater": "Minutes"
+  },
+  "contact": {
+    "title": "Contact us",
+    "p1": "Want to arrange an event together with us for CS students? Get in touch!",
+    "p2": "NOTE: We charge a fee of DKK 750 for events.",
+    "p3": "You can reach us by email or via our Facebook page.",
+    "address": "Address",
+    "mail": "Email"
+  },
+  "rc": {
+    "title": "Regnecentralen",
+    "p1": "Regnecentralen (often ‘RC’) is a community and social forum—online and a physical room—for students at Computer Science and IT Product Development at Aarhus University.",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "address": "Address",
+    "mail": "Email"
+  },
+  "matroska": {
+    "title": "Matroska",
+    "p1": "Matroska is a volunteer group at the Department of Computer Science which typically hosts two to three movie nights per year.",
+    "p2": "Participation is free. We usually watch two movies with dinner in between, sponsored by a friendly company which also gives a short talk before the first film.",
+    "p3": "Interested in joining the group? Send us an email or contact a member.",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "mail": "Email",
+    "popcornLink": "Want to rent the popcorn machine? See here."
+  },
+  "popcorn": {
+    "title": "Rental of Matroska's popcorn machine",
+    "rules": "Rental rules",
+    "intro": "It is possible to borrow our popcorn machine if it is not already booked for the day by filling out the application via the link below. Please note the rules:",
+    "li1": "The popcorn machine is lent only to internal events or those affiliated with the group.",
+    "li2": "You must buy kernels, oil and cups yourself. You may use the salt in the cart.",
+    "li3": "If possible, please pick up the machine in Hopper-0 and return it cleaned.",
+    "li4": "Please write in good time. We are volunteers; response may take a while.",
+    "cta": "Fill in application"
+  },
+  "calendar": {
+    "month": "Month",
+    "week": "Week",
+    "today": "Today",
+    "noEvents": "No events",
+    "allDay": "All day"
+  }
+  ,
+  "common": {
+    "back": "Back"
+  }
+}

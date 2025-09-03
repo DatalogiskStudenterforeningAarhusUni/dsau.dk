@@ -1,0 +1,50 @@
+[
+  {
+    "name": {"da": "K-LAN", "en": "K-LAN"},
+    "quarter": 1,
+    "description": {
+      "da": "Årligt LAN-party som afholdes i løbet af foråret. Det er gratis at deltage og DSAU sørger for aftensmad og morgenmad. Derudover er der turneringer i diverse spil med præmier.",
+      "en": "Annual LAN party in the spring. Participation is free; DSAU provides dinner and breakfast. There are also tournaments in various games with prizes."
+    }
+  },
+  {
+    "name": {"da": "Studiestartsarrangement", "en": "Intro Week Event"},
+    "quarter": 3,
+    "description": {
+      "da": "Et arrangement som afholdes for de nye studerende. Finder typisk sted torsdag i rusugen arrangeret af DSAU.",
+      "en": "An event for new students, typically on Thursday during welcome week, organized by DSAU."
+    }
+  },
+  {
+    "name": {"da": "Generalforsamling", "en": "General Assembly"},
+    "quarter": 2,
+    "description": {
+      "da": "På generalforsamlingen vælges nye medlemmer ind i DSAUs bestyrelse. Her drøftes forslag og ændringer til vedtægterne også, og de stemmes om blandt de fremmødte medlemmer af foreningen.",
+      "en": "At the general assembly, new board members are elected. Proposals and bylaw changes are discussed and voted on by attending members."
+    }
+  },
+  {
+    "name": {"da": "K-Jam", "en": "K-Jam"},
+    "quarter": 4,
+    "description": {
+      "da": "Et årligt Game Jam som bliver holdt i efteråret. Det gælder om at lave det bedste spil inden for et emne. Spil vil blive bedømt i forskellige kategorier med præmier.",
+      "en": "An annual game jam in the autumn. Create the best game around a theme. Games are judged in multiple categories with prizes."
+    }
+  },
+  {
+    "name": {"da": "K-Dag", "en": "K-Day"},
+    "quarter": 2,
+    "description": {
+      "da": "En karrieremesse for studerende i hele Katrinebjerg. Mange virksomheder deltager med gratis goodies, food og jobtilbud.",
+      "en": "A career fair across Katrinebjerg. Many companies attend with goodies, food, and job opportunities."
+    }
+  },
+  {
+    "name": {"da": "Diverse Events", "en": "Various Events"},
+    "quarter": 0,
+    "description": {
+      "da": "Ud over ovenstående arrangeres løbende forskellige aktiviteter som lasertag, klatring, kurser i teknologier m.m. Hold øje med kalenderen og Facebook.",
+      "en": "In addition to the above, we host various activities such as laser tag, climbing, workshops on frameworks and technologies, and more. See the calendar and Facebook."
+    }
+  }
+]
