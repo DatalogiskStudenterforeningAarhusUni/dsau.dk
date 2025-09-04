@@ -27,3 +27,6 @@ yarn-error.log*
 
 .devcontainer/
 .vscode/
+
+# temp API fetch file
+outformatted.json
