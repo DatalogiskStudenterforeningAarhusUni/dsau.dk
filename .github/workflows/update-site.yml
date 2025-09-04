@@ -1,0 +1,54 @@
+name: Update site from API
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Every Sunday at midnight UTC
+  workflow_dispatch: # Allow manual trigger too
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch API data
+        run: |
+          curl -s "https://www.googleapis.com/calendar/v3/calendars/26efd4a6136ae6fcfd17ab7d7e5033f346f8b28c6040b83431d5b5197e8a57b6@group.calendar.google.com/events?key=AIzaSyC8V7kVfg4P7gGuAMSEOopOP2c2O6Xb1Gg" -o outformatted.json
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run formatting script
+        run: |
+          node scripts/format-data.js outformatted.json src/data/calendar_events.json
+
+      - name: Clean up temp file
+        run: rm outformatted.json
+
+      - name: Commit updated data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add calendar_events.json
+          git diff --cached --quiet || git commit -m "Update API data"
+          git push 
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+

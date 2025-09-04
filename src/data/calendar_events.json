@@ -1,79 +1,87 @@
 [
   {
-    "id": "kjam-2025",
-    "title": { "da": "K-Jam", "en": "K-Jam" },
-    "description": {
-      "da": "Game jam/arrangement over weekenden.",
-      "en": "Weekend game jam/event."
+    "id": "competitive-programmerings-café-2025-09-10",
+    "title": {
+      "da": "Competitive Programmerings Café",
+      "en": "Competitive Programmerings Café"
     },
-    "start": "2025-11-07T16:00:00+01:00",
-    "end":   "2025-11-09T16:00:00+01:00",
-    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
-  },
-  {
-    "id": "cpc-2025-09-03",
-    "title": { "da": "Competitive Programmerings Café", "en": "Competitive Programming Café" },
     "description": {
       "da": "Ugentligt onsdagsarrangement.",
-      "en": "Weekly Wednesday meetup."
-    },
-    "start": "2025-09-03T16:00:00+02:00",
-    "end":   "2025-09-03T21:00:00+02:00",
-    "location": { "da": "5342-020 Ada", "en": "5342-020 Ada" }
-  },
-  {
-    "id": "cpc-2025-09-10",
-    "title": { "da": "Competitive Programmerings Café", "en": "Competitive Programming Café" },
-    "description": {
-      "da": "Ugentligt onsdagsarrangement.",
-      "en": "Weekly Wednesday meetup."
+      "en": "Ugentligt onsdagsarrangement."
     },
     "start": "2025-09-10T16:00:00+02:00",
-    "end":   "2025-09-10T21:00:00+02:00",
-    "location": { "da": "5342-020 Ada", "en": "5342-020 Ada" }
+    "end": "2025-09-10T21:00:00+02:00",
+    "location": {
+      "da": "5342-020 Ada",
+      "en": "5342-020 Ada"
+    }
   },
   {
-    "id": "cpc-2025-09-17",
-    "title": { "da": "Competitive Programmerings Café", "en": "Competitive Programming Café" },
+    "id": "competitive-programmerings-café-2025-09-17",
+    "title": {
+      "da": "Competitive Programmerings Café",
+      "en": "Competitive Programmerings Café"
+    },
     "description": {
       "da": "Ugentligt onsdagsarrangement.",
-      "en": "Weekly Wednesday meetup."
+      "en": "Ugentligt onsdagsarrangement."
     },
     "start": "2025-09-17T16:00:00+02:00",
-    "end":   "2025-09-17T21:00:00+02:00",
-    "location": { "da": "5342-020 Ada", "en": "5342-020 Ada" }
+    "end": "2025-09-17T21:00:00+02:00",
+    "location": {
+      "da": "5342-020 Ada",
+      "en": "5342-020 Ada"
+    }
   },
   {
-    "id": "cpc-2025-09-24",
-    "title": { "da": "Competitive Programmerings Café", "en": "Competitive Programming Café" },
+    "id": "competitive-programmerings-café-2025-09-24",
+    "title": {
+      "da": "Competitive Programmerings Café",
+      "en": "Competitive Programmerings Café"
+    },
     "description": {
       "da": "Ugentligt onsdagsarrangement.",
-      "en": "Weekly Wednesday meetup."
+      "en": "Ugentligt onsdagsarrangement."
     },
     "start": "2025-09-24T16:00:00+02:00",
-    "end":   "2025-09-24T21:00:00+02:00",
-    "location": { "da": "5342-020 Ada", "en": "5342-020 Ada" }
+    "end": "2025-09-24T21:00:00+02:00",
+    "location": {
+      "da": "5342-020 Ada",
+      "en": "5342-020 Ada"
+    }
   },
   {
-    "id": "cpc-2025-10-01",
-    "title": { "da": "Competitive Programmerings Café", "en": "Competitive Programming Café" },
+    "id": "competitive-programmerings-café-2025-10-01",
+    "title": {
+      "da": "Competitive Programmerings Café",
+      "en": "Competitive Programmerings Café"
+    },
     "description": {
       "da": "Ugentligt onsdagsarrangement.",
-      "en": "Weekly Wednesday meetup."
+      "en": "Ugentligt onsdagsarrangement."
     },
     "start": "2025-10-01T16:00:00+02:00",
-    "end":   "2025-10-01T21:00:00+02:00",
-    "location": { "da": "5342-020 Ada", "en": "5342-020 Ada" }
+    "end": "2025-10-01T21:00:00+02:00",
+    "location": {
+      "da": "5342-020 Ada",
+      "en": "5342-020 Ada"
+    }
   },
   {
-    "id": "ncpc-2025",
-    "title": { "da": "NCPC", "en": "NCPC" },
-    "description": {
-      "da": "Nordic Collegiate Programming Contest.",
-      "en": "Nordic Collegiate Programming Contest."
+    "id": "npcp-2025-10-04",
+    "title": {
+      "da": "NPCP",
+      "en": "NPCP"
     },
-    "start": "2025-10-04T00:00:00+02:00",
-    "end":   "2025-10-04T23:59:00+02:00",
-    "location": { "da": "TBA", "en": "TBA" }
+    "description": {
+      "da": "Nordic Collegiate Programming Contest",
+      "en": "Nordic Collegiate Programming Contest"
+    },
+    "start": "2025-10-04",
+    "end": "2025-10-05",
+    "location": {
+      "da": "TBD",
+      "en": "TBD"
+    }
   }
 ]
