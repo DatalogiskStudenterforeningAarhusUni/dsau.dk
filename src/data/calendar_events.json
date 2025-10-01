@@ -89,14 +89,26 @@
   },
   {
     "id": "ncpc-2025",
-    "title": { "da": "NCPC", "en": "NCPC" },
+    "title": { "da": "DM i programmering", "en": "Danish Championship in Programming" },
     "description": {
       "da": "Nordic Collegiate Programming Contest.",
       "en": "Nordic Collegiate Programming Contest."
     },
-    "start": "2025-10-04T00:00:00+02:00",
-    "end":   "2025-10-04T23:59:00+02:00",
-    "location": { "da": "TBA", "en": "TBA" }
+    "start": "2025-10-04T10:00:00+02:00",
+    "end":   "2025-10-04T19:00:00+02:00",
+    "location": {
+      "da": "Benjamin-hallen (bygning 5344) Åbogade 34, 8200 Aarhus N",
+      "en": "Benjamin-hall (building 5344) Åbogade 34, 8200 Aarhus N"
+    },
+    "links": [
+      {
+        "href": "https://netcompany.com/dm-i-programmering-2025/",
+        "label": {
+          "da": "DM i programmering",
+          "en": "DM in Programming"
+        }
+      }
+    ]
   },
   {
     "id": "lnsc-2025-11-04",

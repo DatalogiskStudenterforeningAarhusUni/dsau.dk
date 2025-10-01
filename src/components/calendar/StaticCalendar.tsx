@@ -6,6 +6,11 @@ import { ExternalLink, MapPin } from 'lucide-react'
 
 type Lang = 'da' | 'en'
 
+export interface CalendarEventLink {
+  href: string
+  label?: { da: string; en: string }
+}
+
 export interface CalendarEvent {
   id: string
   title: { da: string; en: string }
@@ -14,6 +19,7 @@ export interface CalendarEvent {
   end: string   // ISO
   location?: { da: string; en: string }
   facebookUrl?: string
+  links?: CalendarEventLink[]
 }
 
 export default function StaticCalendar({ events, initialDate }: { events: CalendarEvent[]; initialDate?: Date }) {
@@ -75,6 +81,18 @@ export default function StaticCalendar({ events, initialDate }: { events: Calend
               {selected.description && (
                 <p className="text-sm text-neutral-700 dark:text-neutral-300">{selected.description[lang]}</p>
               )}
+              {selected.links?.length ? (
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {selected.links.map((link, idx) => (
+                    <Button key={`${selected.id}-link-${idx}`} asChild variant="outline">
+                      <a href={link.href} target="_blank" rel="noreferrer">
+                        {(link.label && link.label[lang]) || t('calendar.defaultLinkLabel')}
+                        <ExternalLink className="h-4 w-4 ml-2" />
+                      </a>
+                    </Button>
+                  ))}
+                </div>
+              ) : null}
               {selected.facebookUrl && (
                 <div className="pt-2">
                   <Button asChild>

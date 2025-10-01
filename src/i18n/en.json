@@ -70,7 +70,8 @@
     "week": "Week",
     "today": "Today",
     "noEvents": "No events",
-    "allDay": "All day"
+    "allDay": "All day",
+    "defaultLinkLabel": "Learn more"
   }
   ,
   "common": {
