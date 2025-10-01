@@ -111,6 +111,29 @@
     ]
   },
   {
+    "id": "kjam-info-2025-10-06",
+    "title": { "da": "K-JAM Info Møde", "en": "K-JAM Info Meeting" },
+    "description": {
+      "da": "Kom og hør hvordan DU kan hjælpe til med årets Katrinebjerg Game Jam! Vi søger alt fra kreative sjæle til folk der kan flytte borde. Hvad er et game jam? Det er en konkurrence hvor holdet skaber et helt spil på én weekend.",
+      "en": "Come hear how YOU can help out with this year's Katrinebjerg Game Jam! We need everyone from creative powerhouses to people who can move a table. What is a game jam? It is a competition where teams build an entire game from scratch over a single weekend."
+    },
+    "start": "2025-10-06T16:00:00+02:00",
+    "end":   "2025-10-06T18:00:00+02:00",
+    "location": {
+      "da": "Bygning 5342, Ada 124, Åbogade 34, 8200 Aarhus N",
+      "en": "Building 5342, Ada 124, Åbogade 34, 8200 Aarhus N"
+    },
+    "links": [
+      {
+        "href": "https://www.facebook.com/events/1514084436283379/",
+        "label": {
+          "da": "Facebook-begivenhed",
+          "en": "Facebook event"
+        }
+      }
+    ]
+  },
+  {
     "id": "lnsc-2025-11-04",
     "title": { "da": "Late Night Study Café", "en": "Late Night Study Café" },
     "description": {
