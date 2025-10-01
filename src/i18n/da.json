@@ -70,7 +70,8 @@
     "week": "Uge",
     "today": "I dag",
     "noEvents": "Ingen events",
-    "allDay": "Hele dagen"
+    "allDay": "Hele dagen",
+    "defaultLinkLabel": "Læs mere"
   }
   ,
   "common": {
