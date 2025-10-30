@@ -1,7 +1,8 @@
 [
   {
     "name": "Andreas Hesselholt Høj Hansen",
-    "image": "tmp.png",
+    "image": "HHH.jpg",
+    "imageFocus": 100,
     "title": { "da": "Formand", "en": "Chair" },
     "email": "hhh@dsau.dk",
     "class": 2021
@@ -10,63 +11,72 @@
     "name": "Anders Mikkelsen",
     "email": "andersm@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "andersmikkelsen.jpg",
+    "imageFocus": 60,
     "title": { "da": "Næstformand", "en": "Vice Chair" }
   },
   {
     "name": "Victor Holm Hansen",
     "email": "victor@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "victor.jpg",
+    "imageFocus": 70,
     "title": { "da": "Kasserer", "en": "Treasurer" }
   },
   {
     "name": "Michel Yildirim",
     "email": "michel@dsau.dk",
     "class": 2022,
-    "image": "tmp.png",
+    "image": "michel.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Hans Christian Hansen",
     "email": "hch@dsau.dk",
     "class": 2020,
-    "image": "tmp.png",
+    "image": "HC.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Anders Jensen",
     "email": "andersj@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "andersjensen.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Marc Tao Stender",
     "email": "marc@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "march.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Ida Minkeu",
     "email": "minkeu@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "minkeu.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Andreas Kühlwein",
     "email": "kuhlwein@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "kuhlwein.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
     "name": "Jakob",
     "email": "jakob@dsau.dk",
     "class": 2024,
-    "image": "tmp.png",
+    "image": "jakob.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   },
   {
@@ -80,7 +90,8 @@
     "name": "Bertram",
     "email": "bertram@dsau.dk",
     "class": 2023,
-    "image": "tmp.png",
+    "image": "bertram.jpg",
+    "imageFocus": 100,
     "title": { "da": "Menig", "en": "Member" }
   }
 ]

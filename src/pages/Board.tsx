@@ -12,7 +12,16 @@ export default function Board() {
       <p className="text-neutral-700 mb-6">{t('board.intro')}</p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.map((d: any) => (
-          <Member key={d.name} name={d.name} image={d.image} title={(d.title && d.title[lang]) || d.title} email={d.email} class={d.class} />
+          <Member
+            key={d.name}
+            name={d.name}
+            image={d.image}
+            imagePosition={d.imagePosition}
+            imageFocus={d.imageFocus}
+            title={(d.title && d.title[lang]) || d.title}
+            email={d.email}
+            class={d.class}
+          />
         ))}
       </div>
     </div>
