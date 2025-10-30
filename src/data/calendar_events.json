@@ -3,34 +3,70 @@
     "id": "kjam-2025-11-07",
     "title": { "da": "K-Jam (Dag 1)", "en": "K-Jam (Day 1)" },
     "description": {
-      "da": "Game jam/arrangement – weekendens start.",
-      "en": "Game jam/event – weekend kickoff."
+      "da": "Den 7.-9. november afholder vi DSAU's game jam, K-Jam, i IT-Byen Katrinebjerg. Vi starter fredag kl. 16 og runder af søndag omkring kl. 16 med fremvisning af spil og præmier. Et game jam er et weekendarrangement, hvor hold eller solodeltagere bygger et spil ud fra et afsløret tema, og vi sørger for sponsoreret mad hele vejen.",
+      "en": "Join K-Jam 7–9 November in IT City Katrinebjerg. We kick off Friday at 16:00 and wrap up Sunday around 16:00 with showcases and prizes. A game jam is a weekend where teams or solo developers build a game from a freshly revealed theme, and food is sponsored throughout."
     },
     "start": "2025-11-07T16:00:00+01:00",
     "end":   "2025-11-07T23:59:00+01:00",
-    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+    "location": {
+      "da": "Benjamin-hallen (bygning 5344), IT-Byen Katrinebjerg",
+      "en": "Benjamin Hall (building 5344), IT City Katrinebjerg"
+    },
+    "links": [
+      {
+        "href": "https://forms.gle/Q14kXnPCpSUrWdEo6",
+        "label": {
+          "da": "Tilmeld dig til K-Jam",
+          "en": "Sign up for K-Jam"
+        }
+      }
+    ]
   },
   {
     "id": "kjam-2025-11-08",
     "title": { "da": "K-Jam (Dag 2)", "en": "K-Jam (Day 2)" },
     "description": {
-      "da": "Game jam/arrangement – fortsættelse.",
-      "en": "Game jam/event – continuing."
+      "da": "K-Jam fortsætter hele lørdagen, så dit hold kan bygge videre på jeres spil og sparre med de andre deltagere. Der er sponsoreret mad undervejs, så energien kan holdes oppe.",
+      "en": "K-Jam continues through Saturday, giving your team time to keep building and get feedback from the other participants. Sponsored food keeps everyone going."
     },
     "start": "2025-11-08T00:00:00+01:00",
     "end":   "2025-11-08T23:59:00+01:00",
-    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+    "location": {
+      "da": "Benjamin-hallen (bygning 5344), IT-Byen Katrinebjerg",
+      "en": "Benjamin Hall (building 5344), IT City Katrinebjerg"
+    },
+    "links": [
+      {
+        "href": "https://forms.gle/Q14kXnPCpSUrWdEo6",
+        "label": {
+          "da": "Tilmeld dig til K-Jam",
+          "en": "Sign up for K-Jam"
+        }
+      }
+    ]
   },
   {
     "id": "kjam-2025-11-09",
     "title": { "da": "K-Jam (Finale)", "en": "K-Jam (Finale)" },
     "description": {
-      "da": "Game jam/arrangement – afslutning.",
-      "en": "Game jam/event – finale."
+      "da": "Vi afslutter K-Jam søndag omkring kl. 16, hvor alle hold viser deres spil frem, og vinderne kåres. Mad er inkluderet helt frem til finale og præmieoverrækkelse.",
+      "en": "K-Jam wraps up Sunday around 16:00 with showcases of every game and the prize ceremony. Food is covered right up until the finale."
     },
     "start": "2025-11-09T00:00:00+01:00",
     "end":   "2025-11-09T16:00:00+01:00",
-    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+    "location": {
+      "da": "Benjamin-hallen (bygning 5344), IT-Byen Katrinebjerg",
+      "en": "Benjamin Hall (building 5344), IT City Katrinebjerg"
+    },
+    "links": [
+      {
+        "href": "https://forms.gle/Q14kXnPCpSUrWdEo6",
+        "label": {
+          "da": "Tilmeld dig til K-Jam",
+          "en": "Sign up for K-Jam"
+        }
+      }
+    ]
   },
   {
     "id": "cpc-2025-09-03",
@@ -137,11 +173,23 @@
     "id": "lnsc-2025-11-04",
     "title": { "da": "Late Night Study Café", "en": "Late Night Study Café" },
     "description": {
-      "da": "Udvidet studiecafé med hjælp fra instruktorer. Der er mad – tilmeld jer her: (link kommer snart)",
-      "en": "Extended study café with instructor help. Food provided – sign up here: (link coming soon)"
+      "da": "Den 4. november holder DSAU semesterets Late Night Study Café i Benjamin-hallen. Fra kl. 17 kan du arbejde på dine opgaver, hygge med studiegruppen og få hjælp af de tilstedeværende instruktorer. Som altid er der aftensmad til alle tilmeldte.",
+      "en": "On 4 November DSAU hosts this semester's Late Night Study Café in Benjamin Hall. From 17:00 you can work on assignments, hang out with your study group, and get help from the instructors on duty. Dinner is provided for everyone who signs up."
     },
     "start": "2025-11-04T17:00:00+01:00",
     "end":   "2025-11-04T23:59:00+01:00",
-    "location": { "da": "TBA", "en": "TBA" }
+    "location": {
+      "da": "Benjamin-hallen (ved studiecaféen)",
+      "en": "Benjamin Hall (next to the study café)"
+    },
+    "links": [
+      {
+        "href": "https://forms.gle/Jspq2z2DvmutC8mE6",
+        "label": {
+          "da": "Tilmeld dig til Late Night Study Café",
+          "en": "Sign up for Late Night Study Café"
+        }
+      }
+    ]
   }
 ]
