@@ -4,15 +4,27 @@ interface MemberInfo {
   title?: string
   email?: string
   class?: number
+  imagePosition?: string
+  imageFocus?: number
 }
 
-export default function Member({ name, image, title, email, class: classYear }: MemberInfo) {
+export default function Member({ name, image, title, email, class: classYear, imagePosition, imageFocus }: MemberInfo) {
+  const positionStyle =
+    imagePosition
+      ? { objectPosition: imagePosition }
+      : typeof imageFocus === "number"
+        ? { objectPosition: `50% ${imageFocus}%` }
+        : undefined
+
   return (
     <div className="rounded-lg border p-4 flex gap-4 items-start bg-white dark:bg-neutral-900 dark:border-neutral-800">
       {image ? (
-        <div
-          className="h-20 w-20 rounded-md bg-cover bg-center border shrink-0"
-          style={{ backgroundImage: `url(/images/${image})` }}
+        <img
+          src={`/images/${image}`}
+          alt={name}
+          loading="lazy"
+          className="h-20 w-20 rounded-md object-cover border shrink-0"
+          style={positionStyle}
         />
       ) : null}
       <div>
