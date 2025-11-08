@@ -121,7 +121,7 @@ function MonthView({ date, locale, events, lang, onSelect }: { date: Date; local
 
   return (
     <div className="grid grid-rows-[auto,1fr]">
-      <div className="grid grid-cols-7 text-xs text-neutral-600 border-b">
+      <div className="grid grid-cols-7 text-xs text-neutral-600 dark:text-neutral-300 border-b dark:border-neutral-800">
         {weekDays.map((d,i) => (
           <div key={i} className="px-2 py-2">{d}</div>
         ))}
@@ -145,7 +145,7 @@ function MonthView({ date, locale, events, lang, onSelect }: { date: Date; local
                   </button>
                 ))}
                 {todaysEvents.length === 0 ? (
-                  <div className="text-[10px] text-neutral-400">&nbsp;</div>
+                  <div className="text-[10px] text-neutral-400 dark:text-neutral-500">&nbsp;</div>
                 ) : null}
               </div>
             </div>
@@ -170,7 +170,7 @@ function WeekView({ date, locale, events, lang, onSelect }: { date: Date; locale
             <div className="text-xs text-neutral-600 dark:text-neutral-400 mb-2">{headerFmt.format(d)}</div>
             <div className="space-y-2">
               {todaysEvents.length === 0 ? (
-                <div className="text-xs text-neutral-400 italic">—</div>
+                <div className="text-xs text-neutral-400 dark:text-neutral-500 italic">—</div>
               ) : todaysEvents.map(ev => (
                 <button key={ev.id} onClick={() => onSelect(ev)} className="w-full text-left">
                   <div className="rounded border px-2 py-1 bg-white dark:bg-neutral-800 dark:border-neutral-700">
