@@ -1,9 +1,9 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { Button } from "../ui/button";
 import { useI18n } from "../../i18n/I18nContext";
 import ThemeToggle from "./ThemeToggle";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 
 export default function Header() {
   const { lang, t } = useI18n()
@@ -12,6 +12,12 @@ export default function Header() {
   const { pathname } = useLocation()
 
   const prefix = `/${lang}`
+  // TODO: Replace placeholder url values with actual social links.
+  const socialLinks = [
+    { name: 'LinkedIn', network: 'linkedin', url: 'https://www.linkedin.com/company/dsau' },
+    { name: 'Facebook', network: 'facebook', url: 'https://www.facebook.com/DSAUdk' },
+    { name: 'Instagram', network: 'instagram', url: 'https://www.instagram.com/dsau.cs' },
+  ]
 
   const switchLang = (to: 'da' | 'en') => {
     const parts = pathname.split('/')
@@ -39,9 +45,20 @@ export default function Header() {
           <Nav to={`${prefix}/bestyrelsen`} label={t('nav.board')} />
           <Nav to={`${prefix}/om`} label={t('nav.about')} />
           <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
-          <Button asChild variant="outline" className="ml-2">
-            <a href="https://www.facebook.com/DSAUdk/" target="_blank" rel="noreferrer">Facebook</a>
-          </Button>
+          <div className="ml-2 flex items-center gap-1.5">
+            {socialLinks.map(({ name, network, url }) => (
+              <SocialIcon
+                key={name}
+                url={url}
+                network={network}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Open ${name}`}
+                style={{ height: 36, width: 36 }}
+                className="transition-transform hover:scale-105"
+              />
+            ))}
+          </div>
           <div className="ml-2 flex items-center gap-1">
             <button aria-label="Dansk" title="Dansk" onClick={() => switchLang('da')} className={`h-8 w-8 rounded-md border flex items-center justify-center ${lang === 'da' ? 'bg-neutral-100' : ''}`}>
               <span role="img" aria-label="Danish flag">🇩🇰</span>
@@ -62,9 +79,18 @@ export default function Header() {
             <Nav to={`${prefix}/om`} label={t('nav.about')} />
             <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
             <div className="flex items-center gap-2 pt-2">
-              <Button asChild>
-                <a href="https://www.facebook.com/DSAUdk/" target="_blank" rel="noreferrer">Facebook</a>
-              </Button>
+              {socialLinks.map(({ name, network, url }) => (
+                <SocialIcon
+                  key={name}
+                  url={url}
+                  network={network}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Open ${name}`}
+                  style={{ height: 36, width: 36 }}
+                  className="transition-transform hover:scale-105"
+                />
+              ))}
               <ThemeToggle />
               <button aria-label="Dansk" title="Dansk" onClick={() => { switchLang('da'); setOpen(false) }} className={`h-8 w-8 rounded-md border flex items-center justify-center ${lang === 'da' ? 'bg-neutral-100' : ''}`}>
                 <span role="img" aria-label="Danish flag">🇩🇰</span>
