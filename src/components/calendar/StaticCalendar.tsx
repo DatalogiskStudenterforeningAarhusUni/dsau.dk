@@ -6,6 +6,8 @@ import { ExternalLink, MapPin } from 'lucide-react'
 
 type Lang = 'da' | 'en'
 
+const AU_FIND_BASE_URL = 'https://www.au.dk/om/organisation/find-au/bygningskort?b='
+
 export interface CalendarEventLink {
   href: string
   label?: { da: string; en: string }
@@ -41,6 +43,7 @@ export default function StaticCalendar({ events, initialDate }: { events: Calend
     start: new Date(e.start),
     end: new Date(e.end),
   })), [events])
+  const auFindHref = selected?.location ? buildAuFindHref(selected.location) : null
 
   return (
     <div className="rounded-lg border bg-white dark:bg-neutral-900 dark:border-neutral-800">
@@ -73,9 +76,19 @@ export default function StaticCalendar({ events, initialDate }: { events: Calend
                 </DialogDescription>
               </DialogHeader>
               {selected.location && (
-                <div className="text-sm text-neutral-700 dark:text-neutral-300 flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 text-primary" />
-                  <span>{selected.location[lang]}</span>
+                <div className="flex flex-wrap items-center gap-3 text-sm text-neutral-700 dark:text-neutral-300">
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 text-primary" />
+                    <span>{selected.location[lang]}</span>
+                  </div>
+                  {auFindHref && (
+                    <Button asChild size="sm" variant="outline" className="shrink-0">
+                      <a href={auFindHref} target="_blank" rel="noreferrer">
+                        AU Find
+                        <ExternalLink className="h-4 w-4 ml-2" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               )}
               {selected.description && (
@@ -206,6 +219,39 @@ function formatFullRange(start: Date, end: Date, locale: string) {
   const sameDay = isSameDay(start, end)
   if (sameDay) return `${dayFmt.format(start)} ${timeFmt.format(start)} – ${timeFmt.format(end)}`
   return `${dayFmt.format(start)} ${timeFmt.format(start)} – ${dayFmt.format(end)} ${timeFmt.format(end)}`
+}
+
+function buildAuFindHref(location?: CalendarEvent['location']) {
+  const query = deriveBuildingQuery(location)
+  return query ? `${AU_FIND_BASE_URL}${encodeURIComponent(query)}` : null
+}
+
+function deriveBuildingQuery(location?: CalendarEvent['location']) {
+  if (!location) return null
+  const values = Object.values(location).filter((value): value is string => Boolean(value))
+  for (const value of values) {
+    const buildingNumber = value.match(/\b(\d{4})\b/)
+    if (buildingNumber) return buildingNumber[1]
+  }
+  for (const value of values) {
+    const nameBeforeDigits = value.match(/([A-Za-zÀ-ÿ]+)(?=[-\s]*\d+)/)
+    if (nameBeforeDigits) return slugifyBuildingToken(nameBeforeDigits[1])
+  }
+  for (const value of values) {
+    const primarySegment = value.split(/[,(]/)[0].split('\n')[0]
+    const slug = slugifyBuildingToken(primarySegment)
+    if (slug) return slug
+  }
+  return null
+}
+
+function slugifyBuildingToken(value: string) {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^A-Za-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .toLowerCase()
 }
 
 // Date helpers

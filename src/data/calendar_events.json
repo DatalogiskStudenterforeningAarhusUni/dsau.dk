@@ -191,5 +191,19 @@
         }
       }
     ]
+  },
+  {
+    "id": "boardgame-night-2025-11-18",
+    "title": { "da": "DSAU - Brætspilsaften", "en": "DSAU - Boardgame Night" },
+    "description": {
+      "da": "DSAU holder brætspilsaften for studerende på Institut for Datalogi den 18. november. Vi tager snacks og spil med; du tager venner og gode grin med, og du må meget gerne medbringe dine egne spil. Vi er i Ada-020 og Ada-026 fra kl. 16-20. OBS: Der serveres ikke aftensmad.",
+      "en": "DSAU is hosting a board game night for Computer Science students on 18 November. We'll bring the snacks and games, you bring friends and smiles — and feel free to bring your own favorites. We'll be in Ada-020 and Ada-026 from 16:00–20:00. Note: dinner is not provided."
+    },
+    "start": "2025-11-18T16:00:00+01:00",
+    "end":   "2025-11-18T20:00:00+01:00",
+    "location": {
+      "da": "Ada-020 og Ada-026",
+      "en": "Ada-020 and Ada-026"
+    }
   }
 ]
