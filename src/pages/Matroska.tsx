@@ -11,7 +11,7 @@ export default function Matroska() {
     <div className="container mx-auto px-4 py-8">
       <Seo titleKey="matroska.title" descriptionKey="matroska.p1" />
       <div className="mb-3">
-        <Link to={`${prefix}/underforeninger`} className="inline-flex items-center gap-2 text-neutral-600 hover:underline">
+        <Link to={`${prefix}/underforeninger`} className="inline-flex items-center gap-2 text-neutral-600 dark:text-neutral-300 hover:underline">
           <ArrowLeftCircle className="h-5 w-5" /> {t('common.back')}
         </Link>
       </div>
@@ -26,18 +26,18 @@ export default function Matroska() {
         <address className="not-italic space-y-1">
           <div>
             <b>{t('matroska.facebook')}: </b>
-            <a className="text-blue-600 hover:underline" href="https://www.facebook.com/groups/matroskaFilmKlub" target="_blank" rel="noreferrer">matroskaFilmKlub</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="https://www.facebook.com/groups/matroskaFilmKlub" target="_blank" rel="noreferrer">matroskaFilmKlub</a>
           </div>
           <div>
             <b>{t('matroska.linkedin')}: </b>
-            <a className="text-blue-600 hover:underline" href="https://www.linkedin.com/company/matroska-aarhus-universitet/" target="_blank" rel="noreferrer">Matroska, Aarhus Universitet</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="https://www.linkedin.com/company/matroska-aarhus-universitet/" target="_blank" rel="noreferrer">Matroska, Aarhus Universitet</a>
           </div>
           <div>
             <b>{t('matroska.mail')}: </b>
-            <a className="text-blue-600 hover:underline" href="mailto:matroska.au@gmail.com">matroska.au@gmail.com</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="mailto:matroska.au@gmail.com">matroska.au@gmail.com</a>
           </div>
         </address>
-        <p>{t('matroska.popcornLink')} <Link to={`${prefix}/popcorn`} className="text-blue-600 hover:underline">→</Link></p>
+        <p>{t('matroska.popcornLink')} <Link to={`${prefix}/popcorn`} className="text-blue-600 dark:text-blue-400 hover:underline">→</Link></p>
       </div>
     </div>
   );

@@ -8,8 +8,8 @@ export default function Board() {
   return (
     <div className="container mx-auto px-4 py-8">
       <Seo titleKey="board.title" descriptionKey="board.intro" />
-      <h1 className="text-3xl font-bold mb-4">{t('board.title')}</h1>
-      <p className="text-neutral-700 mb-6">{t('board.intro')}</p>
+      <h1 className="text-3xl font-bold mb-4 text-foreground dark:text-white">{t('board.title')}</h1>
+      <p className="text-neutral-700 dark:text-neutral-300 mb-6">{t('board.intro')}</p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.map((d: any) => (
           <Member key={d.name} name={d.name} image={d.image} title={(d.title && d.title[lang]) || d.title} email={d.email} class={d.class} />

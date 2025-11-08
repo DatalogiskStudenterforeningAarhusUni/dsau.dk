@@ -11,7 +11,7 @@ export default function Rc() {
     <div className="container mx-auto px-4 py-8">
       <Seo titleKey="rc.title" descriptionKey="rc.p1" />
       <div className="mb-3">
-        <Link to={`${prefix}/underforeninger`} className="inline-flex items-center gap-2 text-neutral-600 hover:underline">
+        <Link to={`${prefix}/underforeninger`} className="inline-flex items-center gap-2 text-neutral-600 dark:text-neutral-300 hover:underline">
           <ArrowLeftCircle className="h-5 w-5" /> {t('common.back')}
         </Link>
       </div>
@@ -24,11 +24,11 @@ export default function Rc() {
         <address className="not-italic space-y-1">
           <div>
             <b>{t('rc.facebook')}: </b>
-            <a className="text-blue-600 hover:underline" href="https://www.facebook.com/groups/regnecentralen.au" target="_blank" rel="noreferrer">regnecentralen.au</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="https://www.facebook.com/groups/regnecentralen.au" target="_blank" rel="noreferrer">regnecentralen.au</a>
           </div>
           <div>
             <b>{t('rc.linkedin')}: </b>
-            <a className="text-blue-600 hover:underline" href="https://www.linkedin.com/company/regnecentralen-aarhus-universitet/" target="_blank" rel="noreferrer">Regnecentralen, Aarhus University</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="https://www.linkedin.com/company/regnecentralen-aarhus-universitet/" target="_blank" rel="noreferrer">Regnecentralen, Aarhus University</a>
           </div>
           <div>
             <b>{t('rc.address')}: </b>
@@ -36,7 +36,7 @@ export default function Rc() {
           </div>
           <div>
             <b>{t('rc.mail')}: </b>
-            <a className="text-blue-600 hover:underline" href="mailto:rc@dsau.dk">rc@dsau.dk</a>
+            <a className="text-blue-600 dark:text-blue-400 hover:underline" href="mailto:rc@dsau.dk">rc@dsau.dk</a>
           </div>
         </address>
       </div>
