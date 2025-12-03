@@ -1,5 +1,49 @@
 [
   {
+    "id": "Klan-2026-27-02",
+    "title": {"da": "K-LAN (Dag 1)", "en": "K-Lan (Day 1)"},
+    "description": {
+      "da": "Det årlige lan-party! Kom frisk, tag din studiemakker og din gaming-computer med!",
+      "en": "The annual lan-party! Come on, bring your studygroup and your gaming-pc!"
+    }, 
+    "start": "2026-02-27T17:00:00+01:00",
+    "end": "2026-02-27T23:59:00+01:00",
+    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+  },
+  {
+    "id": "Klan-2026-28-02",
+    "title": {"da": "K-LAN (Dag 2)", "en": "K-Lan (Day 2)"},
+    "description": {
+      "da": "Det årlige lan-party! Kom frisk, tag din studiemakker og din gaming-computer med!",
+      "en": "The annual lan-party! Come on, bring your studygroup and your gaming-pc!"
+    }, 
+    "start": "2026-02-28T00:00:00+01:00",
+    "end": "2026-02-28T23:59:00+01:00",
+    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+  },
+  {
+    "id": "Klan-2026-01-03",
+    "title": {"da": "K-LAN (Dag 3)", "en": "K-Lan (Day 3)"},
+    "description": {
+      "da": "Det årlige lan-party! Kom frisk, tag din studiemakker og din gaming-computer med!",
+      "en": "The annual lan-party! Come on, bring your studygroup and your gaming-pc!"
+    }, 
+    "start": "2026-03-01T00:00:00+01:00",
+    "end": "2026-03-01T12:00:00+01:00",
+    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+  },
+  {
+    "id": "lnsc-2026-21-04",
+    "title": { "da": "Late Night Study Café", "en": "Late Night Study Café" },
+    "description": {
+      "da": "Udvidet studiecafé med hjælp fra instruktorer. Der er mad – tilmeld jer her: (link kommer snart)",
+      "en": "Extended study café with instructor help. Food provided – sign up here: (link coming soon)"
+    },
+    "start": "2026-04-21T17:00:00",
+    "end":   "2026-04-21T23:59:00",
+    "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
+  },
+  {
     "id": "kjam-2025-11-07",
     "title": { "da": "K-Jam (Dag 1)", "en": "K-Jam (Day 1)" },
     "description": {
