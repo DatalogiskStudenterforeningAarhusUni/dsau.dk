@@ -19,7 +19,7 @@ jobs:
 
       - name: Fetch API data
         run: |
-          curl -s "https://www.googleapis.com/calendar/v3/calendars/26efd4a6136ae6fcfd17ab7d7e5033f346f8b28c6040b83431d5b5197e8a57b6@group.calendar.google.com/events?key=AIzaSyC8V7kVfg4P7gGuAMSEOopOP2c2O6Xb1Gg" -o outformatted.json
+          curl -s "https://www.googleapis.com/calendar/v3/calendars/26efd4a6136ae6fcfd17ab7d7e5033f346f8b28c6040b83431d5b5197e8a57b6@group.calendar.google.com/events?key=AIzaSyC8V7kVfg4P7gGuAMSEOopOP2c2O6Xb1Gg&timeZone=Europe/Copenhagen" -o outformatted.json
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

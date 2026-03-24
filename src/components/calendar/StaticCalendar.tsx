@@ -7,6 +7,7 @@ import { ExternalLink, MapPin } from 'lucide-react'
 type Lang = 'da' | 'en'
 
 const AU_FIND_BASE_URL = 'https://www.au.dk/om/organisation/find-au/bygningskort?b='
+const TZ = 'Europe/Copenhagen'
 
 export interface CalendarEventLink {
   href: string
@@ -36,7 +37,7 @@ export default function StaticCalendar({ events, initialDate }: { events: Calend
   const onNext = () => setCursor(prev => add(prev, view === 'month' ? { months: 1 } : { weeks: 1 }))
   const onToday = () => setCursor(new Date())
 
-  const headerLabel = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(cursor)
+  const headerLabel = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: TZ }).format(cursor)
 
   const normalized = useMemo(() => events.map(e => ({
     ...e,
@@ -127,8 +128,8 @@ function MonthView({ date, locale, events, lang, onSelect }: { date: Date; local
   const start = startOfWeek(startOfMonth(date))
   const days: Date[] = []
   for (let i = 0; i < 42; i++) days.push(add(start, { days: i }))
-  const weekdayFmt = new Intl.DateTimeFormat(locale, { weekday: 'short' })
-  const dayFmt = new Intl.DateTimeFormat(locale, { day: 'numeric' })
+  const weekdayFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', timeZone: TZ })
+  const dayFmt = new Intl.DateTimeFormat(locale, { day: 'numeric', timeZone: TZ })
 
   const weekDays = [0,1,2,3,4,5,6].map(i => weekdayFmt.format(add(startOfWeek(new Date()), { days: i })))
 
@@ -172,7 +173,7 @@ function MonthView({ date, locale, events, lang, onSelect }: { date: Date; local
 function WeekView({ date, locale, events, lang, onSelect }: { date: Date; locale: string; events: (Omit<CalendarEvent, 'start'|'end'> & { start: Date; end: Date })[]; lang: Lang; onSelect: (e: any) => void }) {
   const weekStart = startOfWeek(date)
   const days = [0,1,2,3,4,5,6].map(i => add(weekStart, { days: i }))
-  const headerFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'short' })
+  const headerFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'short', timeZone: TZ })
 
   return (
     <div className="grid grid-cols-7">
@@ -200,22 +201,23 @@ function WeekView({ date, locale, events, lang, onSelect }: { date: Date; locale
   )
 }
 
+const cphDayFmt = new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' })
+
 function spansDay(e: { start: Date; end: Date }, day: Date) {
-  const start = startOfDay(day)
-  const end = endOfDay(day)
-  return e.start <= end && e.end >= start
+  const dayStr = cphDayFmt.format(day)
+  return cphDayFmt.format(e.start) <= dayStr && cphDayFmt.format(e.end) >= dayStr
 }
 
 function formatTimeRange(start: Date, end: Date, locale: string) {
-  const fmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' })
+  const fmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const sameDay = isSameDay(start, end)
   if (sameDay) return `${fmt.format(start)} – ${fmt.format(end)}`
-  const dayFmt = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' })
-  return `${dayFmt.format(start)} ${fmt.format(start)} – ${dayFmt.format(end)} ${dayFmt.format(end)}`
+  const dayFmt = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', timeZone: TZ })
+  return `${dayFmt.format(start)} ${fmt.format(start)} – ${dayFmt.format(end)} ${fmt.format(end)}`
 }
 function formatFullRange(start: Date, end: Date, locale: string) {
-  const dayFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: '2-digit', month: 'short' })
-  const timeFmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' })
+  const dayFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: '2-digit', month: 'short', timeZone: TZ })
+  const timeFmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const sameDay = isSameDay(start, end)
   if (sameDay) return `${dayFmt.format(start)} ${timeFmt.format(start)} – ${timeFmt.format(end)}`
   return `${dayFmt.format(start)} ${timeFmt.format(start)} – ${dayFmt.format(end)} ${timeFmt.format(end)}`
@@ -263,7 +265,6 @@ function add(date: Date, by: { days?: number; weeks?: number; months?: number })
   return d
 }
 function startOfDay(d: Date) { const x = new Date(d); x.setHours(0,0,0,0); return x }
-function endOfDay(d: Date) { const x = new Date(d); x.setHours(23,59,59,999); return x }
 function startOfMonth(d: Date) { const x = new Date(d.getFullYear(), d.getMonth(), 1); return x }
 function startOfWeek(d: Date) {
   // Monday as first day of week
@@ -272,4 +273,4 @@ function startOfWeek(d: Date) {
   x.setDate(x.getDate() - (day - 1))
   return x
 }
-function isSameDay(a: Date, b: Date) { return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate() }
+function isSameDay(a: Date, b: Date) { return cphDayFmt.format(a) === cphDayFmt.format(b) }
