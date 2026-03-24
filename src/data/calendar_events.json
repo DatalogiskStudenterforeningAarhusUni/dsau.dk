@@ -1,5 +1,16 @@
 [
   {
+    "id":"generalforsamling-2026-28-04",
+    "title":{"da":"Generalforsamling", "en":"Annual general meeting"},
+    "description": {
+      "da":"Så er det tid til endnu en DSAU Generalforsamling! Kom med og vær med til at have inflydelse i foreningen, og overvej om du vil være med i bestyrelsen!",
+      "en":"It's time for yet another DSAU Annual General Meeting! Come join, influence the association or maybe even join the board!"
+    },
+    "start":"2026-04-28T17:00:00",
+    "end":"2026-04-28T20:00:00",
+    "location": {"da":"Ada-kælderen", "en":"Ada-basement"}
+  },
+  {
     "id":"boulders-2026-17-05",
     "title": {"da": "DSAU x BOULDERS", "en":"DSAU x BOULDERS"},
     "description": {
