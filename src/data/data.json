@@ -8,7 +8,7 @@
     "title": { "da": "Formand", "en": "Chair" }
   },
     {
-    "name": "Bertram",
+    "name": "Bertram Thorsen",
     "email": "bertram@dsau.dk",
     "class": 2023,
     "image": "bertram.jpg",
@@ -48,7 +48,7 @@
     "title": { "da": "PR Ansvarlig", "en": "PR Responsible" }
   },
   {
-    "name":"Eve",
+    "name":"Eve Carolan",
     "email": "eve@dsau.dk",
     "class": 2023,
     "image": "tmp.png",
@@ -56,7 +56,7 @@
     "title": { "da": "PR Ansvarlig", "en": "PR Responsible" }
   },
   {
-    "name":"Camilla",
+    "name":"Camilla Søjberg",
     "email": "camilla@dsau.dk",
     "class": 2023,
     "image": "tmp.png",
