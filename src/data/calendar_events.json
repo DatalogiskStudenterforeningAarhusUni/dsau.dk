@@ -1,5 +1,16 @@
 [
   {
+    "id":"sommerfest-2026-06-26",
+    "title":{"da":"Sommerfest", "en":"End of semester party"},
+    "description": {
+      "da":"Kom og vær med til at fejre afslutningen på endnu et semester når DSAU holder sommerfest i samarbejde med Fredagscaféen og SOFA!",
+      "en":"Come celebrate the end of another semester with DSAU's summer party in collaboration with the Friday Café and SOFA!"
+    },
+    "start":"2026-06-26T17:00:00",
+    "end":"2026-06-26T23:00:00",
+    "location": {"da":"Fredagscaféen", "en":"Friday Café"}
+  },
+  {
     "id":"CV-workshop-2026-04-16",
     "title":{"da":"CV-Workshop", "en":"CV Workshop"},
     "description": {
