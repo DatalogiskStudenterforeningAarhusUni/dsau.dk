@@ -34,7 +34,6 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to={prefix} className="flex items-center gap-3">
           <img src={"/DSAU_logo.png"} alt="DSAU" className="h-8 w-auto" />
-          <span className="font-semibold hidden sm:block">DSAU</span>
         </Link>
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
