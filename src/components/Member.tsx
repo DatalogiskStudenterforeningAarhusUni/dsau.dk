@@ -30,7 +30,6 @@ export default function Member({ name, image, title, email, class: classYear, im
       <div>
         <p className="font-medium text-foreground dark:text-white">{name}</p>
         {title ? <p className="text-sm text-neutral-700 dark:text-neutral-300">{title}</p> : null}
-        {classYear ? <p className="text-sm text-neutral-700 dark:text-neutral-300">Årgang {classYear}</p> : null}
         {email ? (
           <a className="text-sm text-primary hover:underline" href={`mailto:${email}`}>{email}</a>
         ) : null}
