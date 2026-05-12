@@ -8,7 +8,7 @@ interface MemberInfo {
   imageFocus?: number
 }
 
-export default function Member({ name, image, title, email, class: classYear, imagePosition, imageFocus }: MemberInfo) {
+export default function Member({ name, image, title, email, class: imagePosition, imageFocus }: MemberInfo) {
   const positionStyle =
     imagePosition
       ? { objectPosition: imagePosition }
