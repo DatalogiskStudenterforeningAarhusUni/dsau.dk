@@ -2,6 +2,7 @@
   "nav": {
     "events": "Events",
     "underforeninger": "Sub-association",
+    "gallery": "Gallery",
     "board": "Board",
     "about": "About DSAU",
     "contact": "Contact"
@@ -72,6 +73,10 @@
     "noEvents": "No events",
     "allDay": "All day",
     "defaultLinkLabel": "Learn more"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "intro": "Look at the lovely images from our events!"
   }
   ,
   "common": {

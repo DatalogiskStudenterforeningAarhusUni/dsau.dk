@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Matroska from './pages/Matroska'
 import Popcorn from './pages/Popcorn'
 import Rc from './pages/Rc'
+import Gallery from './pages/Gallery'
 import { I18nProvider, type Lang } from './i18n/I18nContext'
 
 function LangLayout() {
@@ -33,6 +34,9 @@ function App() {
         <Route path=":lang" element={<LangLayout />}>
           <Route index element={<Events />} />
           <Route path="underforeninger" element={<Underforeninger />} />
+          <Route path="galleri" element={<Gallery/>}/>
+          <Route path="galleri/:year" element={<Gallery/>}/>
+          <Route path="galleri/:year/:event" element={<Gallery/>}/>
           <Route path="bestyrelsen" element={<Board />} />
           <Route path="om" element={<About />} />
           <Route path="kontakt" element={<Contact />} />

@@ -2,6 +2,7 @@
   "nav": {
     "events": "Events",
     "underforeninger": "Underforeninger",
+    "gallery": "Galleri",
     "board": "Bestyrelsen",
     "about": "Om DSAU",
     "contact": "Kontakt"
@@ -72,6 +73,10 @@
     "noEvents": "Ingen events",
     "allDay": "Hele dagen",
     "defaultLinkLabel": "Læs mere"
+  },
+  "gallery": {
+    "title": "Galleri",
+    "intro": "Kig på det vidunderlig billeder DSAU har taget!"
   }
   ,
   "common": {

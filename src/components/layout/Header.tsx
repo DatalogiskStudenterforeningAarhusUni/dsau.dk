@@ -41,6 +41,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-2 flex-wrap sm:flex-nowrap">
           <Nav to={`${prefix}`} label={t('nav.events')} end />
           <Nav to={`${prefix}/underforeninger`} label={t('nav.underforeninger')} />
+          <Nav to={`${prefix}/galleri`} label={t('nav.gallery')} />
           <Nav to={`${prefix}/bestyrelsen`} label={t('nav.board')} />
           <Nav to={`${prefix}/om`} label={t('nav.about')} />
           <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
@@ -74,6 +75,7 @@ export default function Header() {
           <div className="container mx-auto px-4 py-4 grid gap-2">
             <Nav to={`${prefix}`} label={t('nav.events')} end />
             <Nav to={`${prefix}/underforeninger`} label={t('nav.underforeninger')} />
+            <Nav to={`${prefix}/galleri`} label={t('nav.gallery')} />
             <Nav to={`${prefix}/bestyrelsen`} label={t('nav.board')} />
             <Nav to={`${prefix}/om`} label={t('nav.about')} />
             <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
