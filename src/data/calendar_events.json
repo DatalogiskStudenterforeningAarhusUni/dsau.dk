@@ -7,7 +7,7 @@
       "en": "Extended study café with instructor help. Food provided – sign up here: (link coming soon)"
     },
     "start": "2026-11-03T17:00:00",
-    "end":   "2026-11-03T23:59:00",
+    "end":   "2026-11-03T23:00:00",
     "location": { "da": "Benjamin Hallen", "en": "Benjamin Hall" }
   },
   {
@@ -94,13 +94,22 @@
   },
   {
     "id":"AKA-2026-09-14",
-    "title":{"da":"Kandidat-oplæg & CV-Workshop", "en":"Kandidat-oplæg & CV-Workshop"},
+    "title":{"da":"AKA oplæg for kandidatstuderende", "en":"AKA - Event for master students"},
     "description": {
-      "da":"TODO",
-      "en":"TODO"
+      "da":"Få styr på reglerne med A-kassen når man er kandidatstuderende! Vi har inviteret AKA til at forklare det hele, og de giver også tips til CV! Tilmeld dig nu for at sikre din plads!",
+      "en":"Get a handle on the rules regarding unemployment insurance funds (A-kasser) as a Master's student! We’ve invited AKA to explain everything, and they’ll also share tips for your CV. Sign up now to secure your spot!"
     },
     "start":"2026-09-14T17:15:00",
-    "end":"2026-09-14T18:15:00"
+    "end":"2026-09-14T18:15:00", 
+    "links": [
+      {
+        "href": "https://forms.cloud.microsoft/e/4EQQyn8Pxf",
+        "label": {
+          "da": "Tilmeld dig til AKA oplæg for kandidatstuderende",
+          "en": "Sign up for AKA event for master students"
+        }
+      }
+    ]
   },
   {
     "id":"sommerfest-2026-06-26",
