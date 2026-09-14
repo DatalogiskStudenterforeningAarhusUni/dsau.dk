@@ -33,7 +33,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to={prefix} className="flex items-center gap-3">
-          <img src={"/DSAU_logo.png"} alt="DSAU" className="h-8 w-auto" />
+          <img src={"/DSAU_logo.png"} alt="DSAU" className="h-12 w-auto" />
         </Link>
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
