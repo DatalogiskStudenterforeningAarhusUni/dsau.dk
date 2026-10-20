@@ -1,5 +1,16 @@
 [
   {
+    "id":"julebingo-2026-12-01",
+    "title":{"da":"Julebingo", "en":"Christmas Bingo"},
+    "description": {
+      "da":"Kom og vær med til IDAxDSAU julebingo!",
+      "en":"Join IDAxDSAU for Christmas Bingo!"
+    },
+    "start":"2026-12-01T17:30:00",
+    "end":"2026-12-01T20:00:00",
+    "location": {"da":"Nygaard-kælderen", "en":"Nygaard basement"}
+  },
+  {
     "id": "lnsc-2026-11-03",
     "title": { "da": "Late Night Study Café", "en": "Late Night Study Café" },
     "description": {
