@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Navigate, Outlet, Route, Routes, useParams } from 'react-router-dom'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
@@ -11,6 +12,10 @@ import Matroska from './pages/Matroska'
 import Popcorn from './pages/Popcorn'
 import Rc from './pages/Rc'
 import { I18nProvider, type Lang } from './i18n/I18nContext'
+
+// The admin page only exists in `npm run dev` (see vite-plugins/admin-api.ts);
+// in production builds this is `null` and the page is left out of the bundle.
+const Admin = import.meta.env.DEV ? lazy(() => import('./pages/admin/Admin')) : null
 
 function LangLayout() {
   const params = useParams()
@@ -31,6 +36,7 @@ function App() {
     <div className="min-h-full flex flex-col">
       <Routes>
         <Route path="/" element={<Navigate replace to="/da" />} />
+        {Admin && <Route path="admin" element={<Suspense fallback={null}><Admin /></Suspense>} />}
         <Route path=":lang" element={<LangLayout />}>
           <Route index element={<Events />} />
           <Route path="underforeninger" element={<Underforeninger />} />
