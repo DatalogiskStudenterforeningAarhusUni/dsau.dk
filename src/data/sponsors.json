@@ -1,0 +1,8 @@
+{
+  "ida": {"name": "IDA", "logo": "/images/sponsors/ida.png", "url": null},
+  "imc": {"name": "IMC", "logo": "/images/sponsors/imc.svg", "url": null},
+  "systematic": {"name": "Systematic", "logo": "/images/sponsors/systematic.svg", "url": null},
+  "prosa": {"name": "Prosa", "logo": "/images/sponsors/prosa.svg", "url": null},
+  "bankdata": {"name": "Bankdata", "logo": "/images/sponsors/bankdata.svg", "url": null},
+  "redbull": {"name": "Red Bull", "logo": "/images/sponsors/redbull.svg", "url": null}
+}

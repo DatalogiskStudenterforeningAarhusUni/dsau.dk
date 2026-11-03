@@ -1,14 +1,30 @@
 import pastEvents from "../data/past_events.json";
+import sponsorsData from "../data/sponsors.json";
 import { useI18n } from "../i18n/I18nContext";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 type Localized = { da: string; en: string }
 type Sponsor = { name: string; logo?: string | null; url?: string | null }
-type PastEvent = { name: Localized; date: string; sponsors: Sponsor[] }
+type PastEvent = { name: Localized; date: string; sponsors: string[] }
+
+const sponsors = sponsorsData as Record<string, Sponsor>
+
+// Sponsor ids in past_events.json refer to keys in sponsors.json.
+// An unknown id still renders (as a placeholder) so a typo is visible on the page.
+function resolveSponsor(id: string): Sponsor {
+  const sponsor = sponsors[id]
+  if (!sponsor) {
+    console.warn(`Unknown sponsor id "${id}" in past_events.json – add it to sponsors.json`)
+    return { name: id }
+  }
+  return sponsor
+}
 
 function SponsorLogo({ sponsor }: { sponsor: Sponsor }) {
   const logo = sponsor.logo ? (
-    <img src={sponsor.logo} alt={sponsor.name} className="h-16 w-32 object-contain" />
+    <div className="h-16 w-32 rounded-md bg-white p-2 flex items-center justify-center">
+      <img src={sponsor.logo} alt={sponsor.name} className="max-h-full max-w-full object-contain" />
+    </div>
   ) : (
     // Placeholder until a real logo is added to the sponsor's "logo" field
     <div
@@ -47,7 +63,7 @@ export default function PastEvents() {
               <CardContent>
                 <p className="text-sm font-medium mb-3">{t('pastEvents.sponsoredBy')}</p>
                 <div className="flex flex-wrap gap-6">
-                  {e.sponsors.map((s) => <SponsorLogo key={s.name} sponsor={s} />)}
+                  {e.sponsors.map((id) => <SponsorLogo key={id} sponsor={resolveSponsor(id)} />)}
                 </div>
               </CardContent>
             )}
