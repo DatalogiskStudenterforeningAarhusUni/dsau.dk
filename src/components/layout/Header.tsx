@@ -43,6 +43,7 @@ export default function Header() {
           <Nav to={`${prefix}/underforeninger`} label={t('nav.underforeninger')} />
           <Nav to={`${prefix}/bestyrelsen`} label={t('nav.board')} />
           <Nav to={`${prefix}/om`} label={t('nav.about')} />
+          <Nav to={`${prefix}/sponsorer`} label={t('nav.sponsors')} />
           <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
           <div className="ml-2 flex items-center gap-1.5">
             {socialLinks.map(({ name, network, url }) => (
@@ -76,6 +77,7 @@ export default function Header() {
             <Nav to={`${prefix}/underforeninger`} label={t('nav.underforeninger')} />
             <Nav to={`${prefix}/bestyrelsen`} label={t('nav.board')} />
             <Nav to={`${prefix}/om`} label={t('nav.about')} />
+            <Nav to={`${prefix}/sponsorer`} label={t('nav.sponsors')} />
             <Nav to={`${prefix}/kontakt`} label={t('nav.contact')} />
             <div className="flex items-center gap-2 pt-2">
               {socialLinks.map(({ name, network, url }) => (

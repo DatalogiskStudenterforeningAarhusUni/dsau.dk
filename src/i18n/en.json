@@ -4,7 +4,8 @@
     "underforeninger": "Sub-association",
     "board": "Board",
     "about": "About DSAU",
-    "contact": "Contact"
+    "contact": "Contact",
+    "sponsors": "Sponsors"
   },
   "events": {
     "title": "Events",
@@ -36,6 +37,15 @@
     "p3": "You can reach us by email or via our Facebook page.",
     "address": "Address",
     "mail": "Email"
+  },
+  "sponsors": {
+    "title": "Sponsors",
+    "intro": "DSAU is supported by a number of companies that help us host social and academic events for computer science students at Aarhus University.",
+    "become": "Is your company interested in sponsoring DSAU? Contact us at"
+  },
+  "pastEvents": {
+    "title": "Events",
+    "sponsoredBy": "Sponsored by"
   },
   "rc": {
     "title": "Regnecentralen",

@@ -6,6 +6,7 @@ import Underforeninger from './pages/Underforeninger'
 import Board from './pages/Board'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Sponsors from './pages/Sponsors'
 import Matroska from './pages/Matroska'
 import Popcorn from './pages/Popcorn'
 import Rc from './pages/Rc'
@@ -35,6 +36,7 @@ function App() {
           <Route path="underforeninger" element={<Underforeninger />} />
           <Route path="bestyrelsen" element={<Board />} />
           <Route path="om" element={<About />} />
+          <Route path="sponsorer" element={<Sponsors />} />
           <Route path="kontakt" element={<Contact />} />
           <Route path="matroska" element={<Matroska />} />
           <Route path="popcorn" element={<Popcorn />} />

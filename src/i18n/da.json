@@ -4,7 +4,8 @@
     "underforeninger": "Underforeninger",
     "board": "Bestyrelsen",
     "about": "Om DSAU",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "sponsors": "Sponsorer"
   },
   "events": {
     "title": "Events",
@@ -36,6 +37,15 @@
     "p3": "Vi kan kontaktes på vores mailadresse eller via vores Facebookside.",
     "address": "Adresse",
     "mail": "Mail"
+  },
+  "sponsors": {
+    "title": "Sponsorer",
+    "intro": "DSAU støttes af en række virksomheder, som hjælper os med at afholde sociale og faglige arrangementer for datalogistuderende på Aarhus Universitet.",
+    "become": "Er din virksomhed interesseret i at sponsorere DSAU? Kontakt os på"
+  },
+  "pastEvents": {
+    "title": "Begivenheder",
+    "sponsoredBy": "Sponsoreret af"
   },
   "rc": {
     "title": "Regnecentralen",
