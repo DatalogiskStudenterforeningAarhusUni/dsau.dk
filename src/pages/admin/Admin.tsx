@@ -216,7 +216,8 @@ function SponsorForm({ existing, onSaved }: { existing: Record<string, Sponsor>;
         </Field>
       </div>
       <Field label="Logo (optional)" hint="PNG, JPG, SVG or WebP. Saved as public/images/sponsors/<id>.<ext>. Without a logo, a placeholder is shown.">
-        <input key={fileInputKey} type="file" accept=".png,.jpg,.jpeg,.svg,.webp" className="text-sm"
+        <input key={fileInputKey} type="file" accept=".png,.jpg,.jpeg,.svg,.webp"
+          className="text-sm text-muted-foreground cursor-pointer file:mr-3 file:cursor-pointer file:rounded-md file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-medium file:text-primary-foreground file:shadow-sm file:transition-colors hover:file:bg-primary/90"
           onChange={(e) => setLogo(e.target.files?.[0] ?? null)} />
       </Field>
       {preview && (
