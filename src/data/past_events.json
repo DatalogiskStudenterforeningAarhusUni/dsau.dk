@@ -1,12 +1,38 @@
 [
   {
-    "name": { "da": "Late Night Study Café E26", "en": "Late Night Study Café E26" },
+    "name": {
+      "da": "Late Night Study Café E26",
+      "en": "Late Night Study Café E26"
+    },
     "date": "2026-11-03",
-    "sponsors": ["ida", "imc"]
+    "sponsors": [
+      "ida",
+      "imc"
+    ]
   },
   {
-    "name": { "da": "K-LAN F26", "en": "K-LAN F26" },
+    "name": {
+      "da": "Late Night Study Café E26",
+      "en": "Late Night Study Café F26"
+    },
+    "date": "2026-04-21",
+    "sponsors": [
+      "nitor",
+      "akademikernes-a-kasse"
+    ]
+  },
+  {
+    "name": {
+      "da": "K-LAN F26",
+      "en": "K-LAN F26"
+    },
     "date": "2026-02-27",
-    "sponsors": ["ida", "systematic", "prosa", "bankdata", "redbull"]
+    "sponsors": [
+      "ida",
+      "systematic",
+      "prosa",
+      "bankdata",
+      "redbull"
+    ]
   }
 ]
