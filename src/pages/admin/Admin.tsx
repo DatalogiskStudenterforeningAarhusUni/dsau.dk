@@ -1,4 +1,4 @@
-// Dev-only admin page (/admin) for adding calendar events, sponsors and sponsor events.
+// Dev-only admin page (http://localhost:5173/#/admin) for adding calendar events, sponsors and sponsor events.
 // It talks to the API in vite-plugins/admin-api.ts, which writes to the JSON files in
 // src/data. Only available while running `npm run dev` – commit the changed files afterwards.
 

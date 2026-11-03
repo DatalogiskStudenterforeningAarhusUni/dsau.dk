@@ -1,4 +1,4 @@
-// Dev-only API backing the /admin page.
+// Dev-only API backing the admin page (http://localhost:5173/#/admin).
 //
 // The site is static (GitHub Pages), so there is no real backend. Instead, while
 // `npm run dev` is running, this plugin lets the admin page write directly to the
@@ -192,6 +192,16 @@ export default function adminApi(): Plugin {
     name: 'dsau-admin-api',
     apply: 'serve',
     configureServer(server) {
+      // The site uses HashRouter, so the page itself lives at /#/admin.
+      // Redirect the plain /admin URL there for convenience.
+      server.middlewares.use((req, res, next) => {
+        if (req.method === 'GET' && (req.url === '/admin' || req.url === '/admin/')) {
+          res.statusCode = 302
+          res.setHeader('Location', '/#/admin')
+          return res.end()
+        }
+        next()
+      })
       server.middlewares.use('/__admin', async (req, res) => {
         // The dev server listens on the network (host: true); only allow edits from this machine.
         if (!isLoopback(req)) return send(res, 403, { error: 'The admin API is only available from localhost' })
